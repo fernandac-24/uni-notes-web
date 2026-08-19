@@ -1,0 +1,134 @@
+#database
+
+
+# Introduction to SQL 
+
+GitHub Link: https://github.com/StructuredCS/grokking-relational-database-design
+GitHub Link: https://github.com/Neo-Hao/grokking-relational-database-design
+Youtube video Link: https://www.youtube.com/watch?v=26ls5lNiijk
+
+## Tables, Entities, Keys & SQL
+
+What are Relational Databases?
+ It is a collection of _tables_. 
+
+* Tables:
+-> Is like a spreadsheet where data is organized into rows and colums;
+-> used to represent an entire or a relationship between _entities_.
+
+* Entity:
+-> is an object or concept that can be described by many _attributes_. 
+> [!Image 1]
+> ![[Entity.jpeg]]
+
+Insertion Anomaly = occurs when you cannot add vital data to a table because others unrelated or dependent data is missing. 
+
+
+### Relational Database Management System (RDBMS)
+Is a software that: 
+-> interacts with the underlying hardware and operating system to physically store and manage data in relational databases. 
+ Some common RDBMS - MySQL, MariaDB, PostegreSQL and SQLite
+ -> is used to manage and mantain different databases.
+* Database:  organizes data into different tables;
+> [!Image 2] 
+> ![[RDBMS.png | 250x250]]
+
+-> provides tools and functions to manage databases;
+
+* SQL (Structured Query Language) : a programming language that you can use to create, modify, and query data stored in tables in a RDMS. 
+	Is the standardized language that most RDMS uses. 
+
+### Firts taste of SQL 
+Product table from the Sci-Fi Collective database: 
+> [!Image 3]
+> ![[sciFiDatabase.png]]
+
+How do we get the product names from the product table whose price is above $20? 
+
+```sql title:code1
+SELECT name 
+FROM product
+WHERE price > 20; 
+```
+^code1
+
+We are going to use the [[readme1#SQLite online| SQLite Online]] thats a database running on the cloud. 
+
+The firtst SQL command that we'll be running is:
+
+```sql title:code2
+SELECT * FROM product ;
+```
+
+Wich means select everything (* <=> everything) from the product table. 
+
+This results in showing a table simmilar to the one in [[sciFiDatabase.png]]. 
+
+> [!info]
+> ![[SciFiDatabase1.png]]
+
+When we run [[#^code1 | this SQL query]] we receive a "list" of names, of all products wich prices are higher than $20. 
+It returns a single column (name), with five rows, in each with a name of one of the products, that has the corresponding characteristic. 
+The names are: "Selfie Toaster", "Cat-Poop Coffee", "Inflatable Briefcase", "Lightsabers" and "The Neuralyzer". 
+
+#### SQL clauses:
+* `SELECT`: specifies the columns you want to retrieve from a table;
+* `FROM`: specifies the source you want to retrieve data from, it can be one or more tables; 
+* `WHERE`: allows you to specify conditions to filter the data retrieved by the `SELECT` clause; 
+* ` ; ` : indicates the end of the query;
+
+## SQL Filtering & Aggregation
+
+### Filtering 
+`WHERE`clause helps you filter only a _subset of data_. In this scenario a subset of data means _rows_. 
+So the Where clause filters rows based on the condition that follows. 
+
+If you want, for exemple, that the search retrieves also the description, we can do like this : 
+```sql title:'filtering-multiple-columns-with-where'
+SELECT name, description
+FROM product
+WHERE price > 20; 
+```
+^code3
+To get the names of products that are made by 'Mad Inventors Inc.' :
+(Comparing the string data types in the manufacter rows)
+```sql title:'filtering-by-exact-string-match'
+SELECT name
+FROM product
+WHERE manufacturer 
+      = 'Mad Inventors Inc.'; 
+```
+^code4
+
+#### SQL data types:
+- Numeric data types
+- String data types ('string')
+- Date or time data types
+- Unicode character string data types
+- Binary data types 
+- Miscellaneous data types
+
+#### Logical Operators
+- `AND`
+- `OR`
+- `>`
+- `>=`
+- `<` 
+- `<=` 
+
+Exemple:
+Get the products that are made by 'Mad Inventors Inc.' and have a price below 30. 
+```sql title:'exemple-logic-operators'
+SELECT *
+FROM product
+WHERE manufacturer = 'Mad Inventors Inc.' 
+		AND price < 30; 
+```
+^code5
+
+>> [!warning]  The result rows 
+>>The order of the result rows don't matter, So we shoundn't have any assumptions or 
+>> expectations in terms of how the rows are ordered in the results. 
+
+### Aggregation 
+ Is about performing calculations on a set of rows to produce a single result. 
