@@ -132,3 +132,56 @@ WHERE manufacturer = 'Mad Inventors Inc.'
 
 ### Aggregation 
  Is about performing calculations on a set of rows to produce a single result. 
+ By aggregating data, you can gain insights into the trend and the patterns in the data that may not be visible at the individual record level . 
+
+Exemple: To count the number of rows in the product table. 
+We can use the function `COUNT`. 
+
+```sql title:'COUNT exemple'
+SELECT COUNT(*)
+FROM product;
+```
+^code6
+
+#### Function
+* `COUNT()`: counts the number of rows, and it takes a single parameter;
+* `SUM()`: Calculates the _sum_ of the values in a numeric column;
+* `AVG()`: Calculates the _average_ value in a numeric column;
+
+Exemple: To get the average price of products that are made by 'Mad Inventors Inc.' 
+(Remember [[#^code4| how to filter the products by manufacturer]] ).
+
+```sql title:'AVG exemple'
+SELECT AVG(price) AS avg_price 
+FROM product
+WHERE manufacturer 
+      = 'Mad Inventors Inc.'; 
+```
+^code7
+> [!note] 
+> The `AS avg_price` simply renames the result column. 
+
+* `MAX()`: Finds the _maximum_ value in a clolumn;
+* `MIN()`: Finds the _minimum_ value in a column;
+
+________________________________________________________________________
+A new clause to the [[#SQL clauses]]: 
+*`GROUP BY`: group rows that have the same values in one or more columns;
+
+_ It allows us to apply functions to each group individually. _
+
+Exemple: To get the number of products per manufacturer 
+
+```sql title:'GOUP BY exemple' 
+SELECT COUNT(*) AS product_count, manufacturer
+FROM product
+GROUP BY manufacturer; 
+```
+
+> [!warning]+ DO NOT FORGET! 
+> Remember to include the column following the `GROUP BY`clause in the`SELECT`statement. 
+> Why?
+> If you forget to do so, you result will come up without the manufacturer column. 
+
+
+

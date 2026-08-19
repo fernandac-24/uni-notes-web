@@ -1,7 +1,7 @@
+
 ---
 title: Home
 draft: false
----
-# Welcome to my notes
+___
 
-Here you can find:
+Welcome to my uni notes
