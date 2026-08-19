@@ -1,7 +1,5 @@
-
 ---
-title: Home
-draft: false
-___
+title: Welcome
+---
 
 Welcome to my uni notes
