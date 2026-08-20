@@ -3,9 +3,13 @@
 
 # Introduction to SQL 
 
-GitHub Link: https://github.com/StructuredCS/grokking-relational-database-design
-GitHub Link: https://github.com/Neo-Hao/grokking-relational-database-design
-Youtube video Link: https://www.youtube.com/watch?v=26ls5lNiijk
+## Links 
+* [Grokking Relational Database Design Course](https://github.com/StructuredCS/grokking-relational-database-design)
+
+* [Grokking Relational Database Design Code](https://github.com/Neo-Hao/grokking-relational-database-design)
+
+* [Relational Database Design - Full Course](https://www.youtube.com/watch?v=26ls5lNiijk)
+
 
 ## Tables, Entities, Keys & SQL
 
@@ -13,7 +17,7 @@ What are Relational Databases?
  It is a collection of _tables_. 
 
 * Tables:
--> Is like a spreadsheet where data is organized into rows and colums;
+-> Is like a spreadsheet where data is organized into rows and columns;
 -> used to represent an entire or a relationship between _entities_.
 
 * Entity:
@@ -177,11 +181,39 @@ SELECT COUNT(*) AS product_count, manufacturer
 FROM product
 GROUP BY manufacturer; 
 ```
-
+^code8
 > [!warning]+ DO NOT FORGET! 
 > Remember to include the column following the `GROUP BY`clause in the`SELECT`statement. 
 > Why?
 > If you forget to do so, you result will come up without the manufacturer column. 
 
+> [!warning]+ DO NOT FORGET!
+> Remember to exclude from the `SELECT`clause any column that are neither in the `GROUP BY` clause or the aggregate functions. 
+> ```sql title:'Exemple of what you can't do
+> SELECT COUNT(*) AS product_count, manufacturer, name
+> FROM product
+> GROUP BY manufacturer;
+> ```
+>  _the `name`in line 1 can lead to a error in some SQL engines, and in others the column name will be filled with arbitrarily values from or last row it reads for the group.  _
 
+## SQL Table Commands
+
+### Table management 
+
+#### Create a table 
+* `CREATE TABLE`: command handles table creation;
+
+Context: Create the product table for the database supporting The Sci-Fi Collective. 
+Remember the struct of the product entity [[Entity.jpeg]]. 
+To create the table plus adding a primary key beyond these four different attributes the command will look like this: 
+
+```sql title:'Create a table'
+CREATE TABLE product (
+	product_id INT PRIMARY KEY,
+	name TEXT NOT NULL,
+	description TEXT NOT NULL,
+	price DECIMAL(5,2) NOT NULL, 
+	manufacturer TEXT NOT NULL
+);
+```
 
