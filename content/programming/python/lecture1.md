@@ -1,5 +1,10 @@
-
 Date: January 22, 2026
+
+[Notes](https://cs50.harvard.edu/python/notes/1/)
+
+> [!tldr]- Notes from the course
+> ![[lecture1_notes.pdf]]]
+
 
 # **Conditionals**
 

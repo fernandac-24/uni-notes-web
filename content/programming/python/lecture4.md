@@ -1,5 +1,11 @@
 Date: January 23, 2026
 
+[Notes](https://cs50.harvard.edu/python/notes/4/)
+
+> [!tldr]- Notes from the course
+> ![[lecture4_notes.pdf]]
+
+
 # Libraries 
 
 ## Modules

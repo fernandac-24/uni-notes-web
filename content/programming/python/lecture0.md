@@ -1,8 +1,11 @@
-# Functions, Variables
-
 Date: January 21, 2026
 
-Documentation
+[Notes](https://cs50.harvard.edu/python/notes/0/)
+
+> [!tldr]- Notes from the course
+> ![[lecture0_notes.pdf]]]
+
+# Functions, Variables
 
 ## Parameters
 

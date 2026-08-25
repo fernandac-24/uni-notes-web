@@ -1,5 +1,10 @@
 Date: January 24, 2026
 
+[Notes](https://cs50.harvard.edu/python/notes/6/)
+
+> [!tldr]- Notes from the course
+> ![[lecture6_notes.pdf]]
+
 # File I/O
 
 Working with files, you can hang on to information long term. 

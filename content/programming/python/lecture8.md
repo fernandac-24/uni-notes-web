@@ -1,7 +1,11 @@
-# Object-Oriented Programming
-
 Date: January 25, 2026
 
+[Notes](https://cs50.harvard.edu/python/notes/8/)
+
+> [!tldr]- Notes from the course
+> ![[lecture8_notes.pdf]]
+
+# Object-Oriented Programming
 
 ## Tuples
 

@@ -1,5 +1,11 @@
 Date: January 24, 2026
 
+[Notes](https://cs50.harvard.edu/python/notes/5/)
+
+> [!tldr]- Notes from the course
+> ![[lecture5_notes.pdf]]
+
+
 # Unit Tests
 
 ## Testing [calculator.py](http://calculator.py)

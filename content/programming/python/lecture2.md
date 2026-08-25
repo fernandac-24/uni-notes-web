@@ -1,5 +1,10 @@
-
 Date: January 22, 2026
+
+[Notes](https://cs50.harvard.edu/python/notes/2/)
+
+> [!tldr]- Notes from the course
+> ![[lecture2_notes.pdf]]
+
 
 # Loops
 
