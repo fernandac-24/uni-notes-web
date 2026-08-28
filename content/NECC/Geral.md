@@ -5,7 +5,7 @@ O que tem que ser feito:
 
 - Instagram novo [[NECC/Instagram/home| Instagram Novo]]
 - Aplicação / Site
-- Acolhimento
+- Acolhimento [[Acolhimento]]
 - Propostas de eventos e Workshops
 - 40 anos do NECC 
 - Evento principal 

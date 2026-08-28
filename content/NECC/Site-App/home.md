@@ -1,6 +1,3 @@
-uff here we go... 
-
-O que vai distinguir o site da app exatamente??? 
 
 # Login e Senha 
 Cada MEMBRO do necc tem que ter seu login e senha, pois eles que vão identificar eles como membros do necc. 
