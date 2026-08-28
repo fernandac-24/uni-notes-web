@@ -74,3 +74,24 @@ _ Baseado no planejamento do acolhimento do ano passado e poucas informações q
 	 -> Que tipos de jogos podemos levar 
 	 -> O que mais se pode fazer com os caloiros durante o piquenique
 	 
+8. Instagram / Divulgação 
+	-> Depois de definido o nosso cronograma, fazer divulgação no insta, do acolhimento do dia 9, e depois do acolhimento das escolas e piquenique. 
+	Não só divulgar no insta, mas devemos mandar no grupo do 1º ano também. 
+	
+	-> Fazer um post de recap das informações mais importantes do que foi abordado na apresentação 
+	* o necaum fez um muito fixe, seria mais ou menos naquele estilo*
+
+	-> Pode ser colocar nos stories ou fazer um post mesmo, do tipo: 
+	"Já escolheu os teus turnos? "
+	Com indicações de como ver o horário e já ter os seus turnos favorítos em mente, pois durante a primeira semana cada professor vai usar seus métodos para que escolhas o teu turno. 
+	-> Depois pode-se fazer outro a falar das aplicações da UM,
+	"Já tens tudo pronto? " 
+	Instalar e logar na BlackBoard, no SASUM,  UMapp, e Recurso UM para os que usam o autocarro de Guimarães <=> Braga da Uni. 
+
+	-> Disponibilizar no insta uma caixa de perguntas para tirar dúvidas, pré e pós acolhimento.
+	
+	-> Disponibilizar no insta o guia para quem vai comprar um portátil novo
+	
+	-> O Est-- disse que tinha uma ideia de vídeo para reels, ou TikTok 
+
+
