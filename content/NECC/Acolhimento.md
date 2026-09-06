@@ -41,7 +41,7 @@ _ Baseado no planejamento do acolhimento do ano passado e poucas informações q
 > Ideal é definir a apresentação bem para ter uma noção da duração. 
 
 
-# Reunião 
+# Reunião 31/08
 
 > [!tldr]- Guião do Acolhimento
 > ![[Acolhimento 2026.pdf]]
@@ -95,3 +95,104 @@ _ Baseado no planejamento do acolhimento do ano passado e poucas informações q
 	-> O Est-- disse que tinha uma ideia de vídeo para reels, ou TikTok 
 
 
+# Bingo
+
+## Encontre alguém que...
+
+```py
+cell_pool = [
+    "que tem menos de 1h de uso de redes sociais hoje",
+    "que não toma café de todo",
+    "que veio de uma cidade a mais de 100 km daqui",
+    "que sabe tocar pelo menos um instrumento musical",
+    "que já maratona uma série inteira num só fim de semana",
+    "que tem um animal de estimação incomum (não vale só cão ou gato)",
+    "que sabe falar mais de dois idiomas fluentemente",
+    "que prefere treinar/fazer exercício de noite/madrugada",
+    "que já partiu um osso do corpo",
+    "que nunca provou a comida típica mais famosa da região", #Francesinha ou Pastel de Nata?
+    "que tem a bateria do telemóvel abaixo dos 30% neste momento",
+    "que sabe fazer um truque de magia ou malabarismo",
+    "que prefere doce a salgado",
+    "que tem mais de 4.000 fotos na galeria do telemóvel",
+    "que tem uma tatuagem com um significado engraçado ou curioso",
+    "que ainda usa um relógio de pulso analógico",
+    "que é a pessoa que cozinha sempre no grupo de amigos",
+    "que não tem conta no TikTok",
+    "que tem exatamente a mesma altura do que tu",
+    "que usa meias com estampas divertidas ou coloridas hoje",
+    "que já ganhou um torneio ou competição (desportiva, gaming, etc.)",
+    "que nasceu no mesmo mês do que tu",
+    "que prefere podcasts a ouvir música na viagem",
+    "que traz consigo um porta-chaves com uma figura, peluche ou memória engraçada",
+    "que sabe fazer uma imitação perfeita de alguém famoso"
+]
+```
+
+## Perguntas e respostas
+> [!info] Preciso de mais 4 perguntas no mínimo. 
+
+```py
+questions_and_answers = {
+    "Qual o nome do atual Presidente do NECC?": {
+        "gonçalo",
+        "goncalo",
+        "gonçalo soares",
+        "goncalo soares",
+        "soares",
+    },
+    "Qual o nome do diretor de curso?": {
+        "antónio ramires",
+        "antonio ramires",
+        "ramires",
+        "antónio",
+        "antonio",
+    },
+    "Em que edifício fica a repografia?": {
+        "cp2",
+    },
+    "Qual é a número da sala do Necc" : {
+        "1.03",
+    },
+     "Qual o insta do NECC?" : {
+       "@necc.uminho",
+       "necc.uminho",
+     },
+     "Quantos departamentos o NECC tem?" : {
+       "4",
+     },
+     "Quantas UCs de matemática vais ter no 1º semestre?" : {
+       "3",
+     },
+     "Quando vai acontecer a atividade promovida pelo NECC" : {
+       "11",
+       "dia 11",
+       "11/09",
+     },
+     "Qual a aplicação em que se marca a senha de refeição na cantina?" : {
+      "sasum",
+     },
+     "Qual o nome da app em que vais ter acesso ao material disponibilizado pelos professores?" : {
+      "blackboard",
+     },
+}
+
+```
+
+
+# Reunião 07/09
+
+Para ser definido:
+- Quem vai ser cada um dos grupos do GPS. 
+-> Temos mais pessoas que se disponibilizaram para ajudar no Acolhimento, temos que incluir eles em algum grupo do GPS. 
+- Alguém disposto a gravar e tirar fotos no dia 9 para fazer o primeiro reels do NECC, podendo já aparecer uma das pessoas que vai ser o #NECC-instateam . 
+- Ajuda com os envelopes (acredito que só vamos ter a carta e o manual do caloiro impressos na terça). Então vai ser preciso umas 4 pessoas para ajudar a arrumar os envelopes. 
+
+## Sobre o dia 11
+- Explicar como vai ser o dia 11.
+- O ponto de encontro dos caloiros vai ser na uni? ou já na rodovia? 
+-> Sendo na uni é preciso que tenham pessoas na rodovia (a guardar o lugar), e um grupo na uni a espera dos caloiros para guiar eles até a rodovia. 
+- Perguntar quem estaria disponível para está lá no dia 11.
+- Recomendar que todos os presentes estejam com a t-shirt do NECC no dia 11. 
+-  Post a anunciar a atividade do dia 11/09 
+-> Faz sentido ter um forms super simples só para a pessoa colocar o nome, número de aluno para confirmar presença na atividade , podemos já colocar lá algo que eles digam a sua preferencia (volei, futbol, sueca...). 
