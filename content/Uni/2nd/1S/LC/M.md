@@ -6,6 +6,9 @@
 
 [Link to book pdf](https://cin.ufpe.br/~mlogica/livros/Logic%20and%20Structure%20-%20Van%20Dalen.pdf)
 
+> [!tldr]- Click here to view book
+> ![[Logic and Structure - Van Dalen.pdf]]
+
 * Language, Proof and Logic, J. Barwise e J. Etchemendy, CSLI Publications, 2003.
 
 > [!tldr]- Click here to view the book
