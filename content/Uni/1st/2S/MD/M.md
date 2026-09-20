@@ -1,3 +1,6 @@
+---
+title: Material Teórico-Prático - Matemática Discreta
+---
 
 # Sebenta 
 

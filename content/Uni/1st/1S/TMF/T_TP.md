@@ -1,3 +1,7 @@
+---
+title: Material Teórico-Prático - Tópicos Fundamentais da Matemática
+---
+
 # Slides
 Slides organizados por temas:
 ## Preliminares de Lógica 

@@ -1,3 +1,6 @@
+---
+title: Lógica CC
+---
 
 
 # Library

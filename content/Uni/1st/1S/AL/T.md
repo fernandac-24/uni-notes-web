@@ -1,3 +1,7 @@
+---
+title: Material Teórica - Álgebra Linear
+---
+
 # Slides 
 Slides organizados por tema: 
 ## Álgebra Vetorial 

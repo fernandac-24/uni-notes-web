@@ -1,3 +1,7 @@
+---
+title: Materail Teórico - Laboratórios de Programação I
+---
+
 Todos os conteúdos teóricos das aulas se encontram aqui!
 
 # Material

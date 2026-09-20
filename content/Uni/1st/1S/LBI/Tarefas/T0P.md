@@ -1,3 +1,7 @@
+---
+title: Tarefa 0 - Projeto
+---
+
 *Tarefa 0 Projeto : *  https://haslab.github.io/Teaching/LI1/2526/haddocks/worms/Tarefa0_2025.html
 _Template de código_: https://haslab.github.io/Teaching/LI1/2526/haddocks/worms/src/Tarefa0_2025.html
 
