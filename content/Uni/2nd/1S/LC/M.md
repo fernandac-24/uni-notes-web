@@ -24,12 +24,19 @@ Encontrei esse site, que para além de blog e um guia para estudo de Lógica, co
 > [!tldr]- Click here to view the guide 
 > ![[LogicStudyGuide.pdf]]
 
+* Apontamentos do Luis Pinto de 2014-2015
+
+> [!tldr]- Click here to view PDF
+> ![[apontamentos.pdf]]
+
 
 # Preliminares 
 
 > [!tldr]- Click here to view **slides**
 > ![[Slides_LogicaCC_Preliminares.pdf]]
 
+
+# Ficha 
 
 > [!tldr]- Click here to view **ficha**
 > ![[Exercicios_LogicaCC.pdf]]

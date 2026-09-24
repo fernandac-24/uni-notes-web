@@ -1,5 +1,5 @@
 ---
-Title: Uni notes index
+title: Uni notes index
 ---
 
 Organized by years:
