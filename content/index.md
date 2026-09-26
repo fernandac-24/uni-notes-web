@@ -19,6 +19,14 @@ The main goal is indeed to keep here all my notes about my Computer Science degr
 
 
 <details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
+  <summary style="font-weight: bold; cursor: pointer;">💙 NECC </summary>
+  <p style="margin-top: 0.5rem;">Projects and activities organization</p>
+  <ul>
+    <li><a href="NECC/Geral">Necc notes</a></li>
+  </ul>
+</details>
+
+<details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
   <summary style="font-weight: bold; cursor: pointer;">📚 Academic Notes & Textbooks</summary>
   <p style="margin-top: 0.5rem;">Summaries and guides from my coursework:</p>
   <ul>
@@ -27,11 +35,13 @@ The main goal is indeed to keep here all my notes about my Computer Science degr
 </details>
 
 <details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
-  <summary style="font-weight: bold; cursor: pointer;">🛠️ Cheat Sheets & Guides</summary>
-  <p style="margin-top: 0.5rem;">Quick reference sheets for everyday tools:</p>
+  <summary style="font-weight: bold; cursor: pointer;">✍ Study on other matters </summary>
+  <p style="margin-top: 0.5rem;">Quick reference for relevant content:</p>
   <ul>
-    <li><a href="/matlab-cheatsheet">MATLAB Functions & Syntax</a></li>
-    <li><a href="/terminal-commands">Linux Terminal & Shell Shortcuts</a></li>
+    <li><a href="programming/MathLab">MATLAB Functions & Syntax</a></li>
+    <li><a href="programming/Ncurses">Nurses</a></li>
+    <li><a href="programming/python/intro">Python Notes</a></li>
+    <li><a href="programming/database/Week1">Database</a></li>
   </ul>
 </details>
 
