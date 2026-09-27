@@ -94,9 +94,73 @@ FANET can also help to operate behind the obstacles, and it can extand the scala
 _"during the operation, because of the weather condition changes, some of the UAVs may be disconnected. If the multi-UAV system can support FANET architecture, it can ==maintain the connectivity through the other UAVs==, as it is shown in Fig. 2b. This connectivity feature enhances the reliability of the multi-UAV systems."_
 
 ## UVA swarms 
+Para que os UVAs trabalhem como um enxame é necessário que os UVAs sejam capazes de comunicar entre eles, e devido a capacidade de carga dos pequenos UVAs não seria viável, ou até mesmo possível, equipa-los com o hadware necessário para estabelecer a comunicação UVA-para-infraestrutura.
+Com a dinâmica de enxame(swarms) é possível previnir a colisão dos UVAs, e melhor coordenação entre os UVAs.
+
+
+### Cooperative Autonomus Reconfigurable UVA Swarm (CARUS)
+The objective of CARUS is the surveillance of a given set of points. Each UAV operates in an autonomous manner, and the decisions are taken by each UAV in the air rather than on the ground.
+
+* [25] M. Quaritsch, K. Kruggl, D. Wischounig-Strucl, S. Bhattacharya, M. Shah, B. Rinner, Networked UAVs as aerial sensor network for disaster management applications, Elektrotechnik und Informationstechnik 127 (3) (2010) 56–63. 
+UAV swarm application for disaster management.  The aim of the project is to provide
+quick and accurate information from the affected area.
+
+## decrease payload and cost
+Ao usar FANET apenas uma pequena porção dos UVAs  necessita de UVA-para-Infraestrutura hadwares, enquanto os demais podem operar com FANET, que apenas exige um hadware mais leve. 
+
+#  FANET design characteristics
+
+## What is and what is not considered FANET ?
+So... what exactly can be named as FANET?
+FANET related researches are studied under different names, such as :
+-  ad hoc based aerial robot team
+	mostly concentrate on the ==collaborative coordination of multi-UAV systemsº==, not on the network structures, algorithms or protocols.
+- aerial sensor network
+	specialized mobile sensor and actor network so that the nodes are UAVs. It moves around the environment, senses with the sensors on the UAVs and relays the collected data to the ground base.
+- UAV ad hoc network
+	Na pética, não há diferença conceitual em relação ao que os autores propõem. 
+
+> Poque o autor opta por usar a nomeclatura FANET? 
+> Ao adotar **FANET** (_Flying Ad-Hoc Network_), fica intuitivo que se trata de uma subclasse especializada das redes móveis(VANET e MANET), mas focada em nós que voam.
+
+## Differences between FANET and the existing ad-hoc networks
+### Node mobility
+In FANET, the node’s mobility degree is much **higher** than in the VANET and MANET. According to [16], a UAV has a speed of 30–460 km/h, and this situation results in several challenging communication design problems.
+
+### Mobility model
+MANETs generally implement the **random waypoint mobility model**  [34], in which the direction and the speed of the nodes are chosen randomly.
+
+VANET mobility models are highly **predictable**.
+
+The flight plan changes, the fast and sharp UAV movements and different UAV formations directly affect the mobility model of multi-UAV systems. 
+FANET mobility models are proposed:
+- **Semi-Random Circular Movement (SRCM)**
+the node distribution function is derived within a two dimentional disk region. 
+
+In the 
+* [36] E. Kuiper, S. Nadjm-Tehrani, Mobility models for UAV group reconnaissance applications, in: Proceedings of International Conference on Wireless and Mobile Communications, IEEE Computer Society, 2006, p. 33.
+its present two new models 
+1. **random UAV movement model**
+Os UAVs movem de forma idependente, cada um decide a direção dos seus movimentos de acordo com um _processo Markov_ predefinido. 
+> [!quote]  It was also observed that the random model is remarkably simple, but it leads to ordinary results.  
+> _Do artigo _
+
+
+2. **pheromone map** (não diz o nome do modelo)
+UVAs mantém um mapa de feromonas, cada UVA marca a área que escaneia no mapa, e compartilha o mapa de feromonas com 
+
+> [!info] O mapa de feromonas não é exatamente como nos animais. Na verdade, é um modelo inspirado no comportamento das formigas na natureza(técnica conhecida na IA como _Ant Colony Optimization_. ) 
+> - **Marcadores Digitais:** Em vez de expelir um produto químico no ar, o drone registra em um mapa digital compartilhado as coordenadas geográficas pelas quais ele já passou.
+>
+> - **"Cheiro" Virtual (Valor Numérico):** Cada área varrida recebe uma pontuação ou sinalizador numérico (o "feromônio").
+> 
+> - **Evaporação (Tempo):** O "feromônio digital" diminui de valor conforme o tempo passa, simulando a evaporação do cheiro na natureza. Isso indica aos drones que aquela área precisa ser coberta novamente depois de um tempo.
+>
+> - **Estratégia de Busca:** Quando um drone navega, ele lê o mapa e prefere voar em direção às áreas com **menor nível de feromônio** (ou seja, locais pouco ou nunca explorados recente/historicamente).
 
 
 # Glossary 
 1. _Unmanned Air Vehicle (UVA)_ = commonly known as **drone**, is an aircraft that operates without a human pilot, crew, or passagers on board.  
 2. _multi-UAV (Unmanned Air Vehicle)_ = **multiple** drones** working together in a coordinated way within the same airspace to complete complex missions.
 3. Ad-Hoc Network = rede de computadores temporária e descentralizada em que os dispositivos se conectam diretamente uns aos outros, sem precisar de uma infraestrutura fixa ou de um roteador central. 
+4. Markov  = is a  stochastic process describing a sequence of possible events in wich the probability of each event depends only on the state atteined in the previous event. 
