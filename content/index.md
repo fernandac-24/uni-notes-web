@@ -15,16 +15,8 @@ Yeah... I know, I still don't have a name for this space.
 
 Here is where I keep notes, about what? you may ask, well... about everything. 
 
-The main goal is indeed to keep here all my notes about my Computer Science degree, but I also endeend up adding much more things, not necessarily related to CS. 
+The main goal is indeed to keep here all my notes about my Computer Science degree, but I also ended up adding much more things, not necessarily related to CS. 
 
-
-<details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
-  <summary style="font-weight: bold; cursor: pointer;">💙 NECC </summary>
-  <p style="margin-top: 0.5rem;">Projects and activities organization</p>
-  <ul>
-    <li><a href="NECC/Geral">Necc notes</a></li>
-  </ul>
-</details>
 
 <details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
   <summary style="font-weight: bold; cursor: pointer;">📚 Academic Notes & Textbooks</summary>

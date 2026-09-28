@@ -12,3 +12,7 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+
+content/Obisidian-UNI/NECC/*
+content/Obisidian-UNI/Hobbie/*
+content/Obisidian-UNI/livros/*
