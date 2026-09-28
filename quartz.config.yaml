@@ -12,6 +12,8 @@ configuration:
     - private
     - templates
     - .obsidian
+    - "NECC"
+    - "Hobbie"
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
