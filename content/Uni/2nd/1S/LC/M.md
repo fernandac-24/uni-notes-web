@@ -37,7 +37,6 @@ Encontrei esse site, que para além de blog e um guia para estudo de Lógica, co
 > [!tldr]- Ainda não temos os slides 
 
 
-
 # Ficha 
 
 > [!tldr]- Click here to view **ficha**

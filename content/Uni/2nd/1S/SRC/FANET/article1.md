@@ -114,7 +114,7 @@ Ao usar FANET apenas uma pequena porção dos UVAs  necessita de UVA-para-Infrae
 So... what exactly can be named as FANET?
 FANET related researches are studied under different names, such as :
 -  ad hoc based aerial robot team
-	mostly concentrate on the ==collaborative coordination of multi-UAV systemsº==, not on the network structures, algorithms or protocols.
+	mostly concentrate on the ==collaborative coordination of multi-UAV systems==, not on the network structures, algorithms or protocols.
 - aerial sensor network
 	specialized mobile sensor and actor network so that the nodes are UAVs. It moves around the environment, senses with the sensors on the UAVs and relays the collected data to the ground base.
 - UAV ad hoc network
@@ -158,9 +158,65 @@ UVAs mantém um mapa de feromonas, cada UVA marca a área que escaneia no mapa, 
 >
 > - **Estratégia de Busca:** Quando um drone navega, ele lê o mapa e prefere voar em direção às áreas com **menor nível de feromônio** (ou seja, locais pouco ou nunca explorados recente/historicamente).
 
+### Node density 
+Pode ser definido como o número médio de nodos por unidade de área. 
+FANET node density is much lower than in the MANET and VANET. 
+
+### Topology change 
+Drones voam rápido e em um espaço tridimencional. Isso faz com que a distância entre eles constantemente mude. 
+- Entrada e saída de drones
+	-> Se um UVA quebra/fica sem bateria: ele cai/retorna, cortando repentinamente o sinal de ponte que ele estabelecia com os outros UVAs.
+	-> Se um drone é inseirido: a rede precisa se reorganizar para reconhecer e incluir no sistema o novo UVA. 
+Qualidade do Sinal: Conforma os drones se movimentam, eles acabam por se afastar,  são separados por obstaculos, o que pode contribui para o sinal de rádio enfraquecer ou acir repentinamente, forçando a rede a recalcular rotas de dados em tempo real. 
+
+### Radio propagation model 
+Apesar de que os UVAs podem estar muito longe do solo, na maioria dos casos, existe uma linha de vião direta(**line-of-sigth**) entre eles. 
+
+### Power consumption and network lifetime
+Enquanto para os MANETs têm problemas com a vida útil da rede(network), devido a sua dependência em dispositivos computacionais alimentados por bateria. O hardware de comunicação FANET  é alimentada pela fonte de energia do UVA. Isso significa que o hadware não apresenta nenhum problema prático com fonte de energia. 
+Entretanto, o consumo de energia ainda é um problema para mini UVAs. 
+
+### Computational power
+In ad hoc network concept, the ==nodes can act as routers==.
+Na mesma, ainda precisam de um certas compatibilidades computacionais para o processamento de dados de chegada em tempo real. 
+Tanto em VANETs quanto em FANETs, podem ser utilizados dispositivos específicos para a aplicação com alto poder computacional. 
+Boa parte dos UVAs tem espaço e energia suficiente para incluir alto poder computacional. A única ==limitação== para o poder computacional é o ==peso==. 
+
+### Localization 
+Em MANET, GPS é suficientepara determinar a localização dos nodos. Quando o GPS não está disponível  pode-se recorrer a **nodos de referência**(beacon nodes) ou técnicas de proximidade(proximity-based). 
+
+> [!info] **Nodos de Referência**
+>  Tratam-se de dispositivos (ou nós) da rede que já conhecem com precisão a sua própria localização geográfica (por exemplo, por possuírem um receptor GPS embutido ou por terem sido posicionados manualmente em coordenadas fixas e conhecidas).
+
+Em VANET, para receptores GPS de classe de navegação, têm por volta de 10-15m de precisão, o que pode ser acaitável para guias de rotas, porém já não seria confiável para "cooperative safety applications", como por exemplon avisos de colisão para carros. 
+(_"Some researchers use assisted GPS (AGPS) or differential GPS (DGPS) by using some type of ground-based reference stations for range corrections with accuracy about 10 cm [42,43]."_)
+
+Devido a alta velocidade de movimentação dos UVAs e diferenças nos modelos de mobilidade dos sistemas multi-UVA. FANET exige uma grande presição na localização de dados em um pequeno intervalo de tempo.  E o GPS pode não ser rápido o suficiente. Nestes casos, cada UVA deve estar equipada com um GPS e um **inertial measurement unit (IMU)** para ser capaz de partilhar a sua localização com outros UVAs a qualquer momento. 
+
+> [!info] Inertial Mesurement Unit (IMU)
+> É um sensor multifucional. Geralmente combia dois ou três sensores em um único chip:
+> 1. Acelerômetro =  mede a aceleração linear (em X,  Y , Z), ou seja, variações de velocidade e a força da gravidade. 
+> 2. Giroscópio = mede a velocidade angular (taxa de rotação nos eixos).
+> 3. Magnetômetro = funciona como uma bússula digital. 
+
+## FANET design considerations 
+
+- Adaptability 
+- Scalability
+## ==Latency (Latência)==
+O tempo de atraso no envio de dados tem uma margem muitio pequena, quando se trata da aplicação dos FANETs, pois estas aplicações exigem trasmissão de dados dentro de um limite de tempo, onde um atraso de segundos pode ter consequências significativas.
+
+Em [47], foi realizado uma análise do atraso de pacote de um único salto (**one-hop**) para FANETs. 
+
+> [!info] one-hop
+> Refere-se a uma comunicação direta entre dois nós da rede que estão ao alcance do sinal de rádio um do outro, sem necessidade de nós intermediários para retransmitir a mensagem. 
+> No contexto, foi então, estudado o delay/atraso que um dado leva para sair de um drone e chegar diretamente ao drone vizinho mais próximo. 
+
+
 
 # Glossary 
 1. _Unmanned Air Vehicle (UVA)_ = commonly known as **drone**, is an aircraft that operates without a human pilot, crew, or passagers on board.  
 2. _multi-UAV (Unmanned Air Vehicle)_ = **multiple** drones** working together in a coordinated way within the same airspace to complete complex missions.
 3. Ad-Hoc Network = rede de computadores temporária e descentralizada em que os dispositivos se conectam diretamente uns aos outros, sem precisar de uma infraestrutura fixa ou de um roteador central. 
 4. Markov  = is a  stochastic process describing a sequence of possible events in wich the probability of each event depends only on the state atteined in the previous event. 
+
