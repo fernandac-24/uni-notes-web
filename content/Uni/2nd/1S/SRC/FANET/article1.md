@@ -206,12 +206,68 @@ Devido a alta velocidade de movimentação dos UVAs e diferenças nos modelos de
 ## ==Latency (Latência)==
 O tempo de atraso no envio de dados tem uma margem muitio pequena, quando se trata da aplicação dos FANETs, pois estas aplicações exigem trasmissão de dados dentro de um limite de tempo, onde um atraso de segundos pode ter consequências significativas.
 
-Em [47], foi realizado uma análise do atraso de pacote de um único salto (**one-hop**) para FANETs. 
+Em [[#^r47 | [47] ]], foi realizado uma análise do atraso de pacote de um único salto ([[#^onehop | one-hop]])  para FANETs baseados [[#^ieee802 | IEEE802.11]] . Onde foram usadas fórmulas matemáticas exatas para calcular o atraso médio. O estudo [[#^r48 | [48] ]], analisou redes Wi-Fi locais (WLANs) tradicionais e concluiu que o tempo de serviço da camada MAC segue uma distribuição exponencial. 
+Devido à dinâmica de voo 3D e as variações na taxa de serviço da camada MAC, os protocolos convencionais desenhados para redes móveis terrestres falahm em garantir os limites de latência estritos necessários para cenários críticos dos FANETs. 
 
-> [!info] one-hop
+> [!info]- one-hop
 > Refere-se a uma comunicação direta entre dois nós da rede que estão ao alcance do sinal de rádio um do outro, sem necessidade de nós intermediários para retransmitir a mensagem. 
 > No contexto, foi então, estudado o delay/atraso que um dado leva para sair de um drone e chegar diretamente ao drone vizinho mais próximo. 
+^onehop
 
+
+> [!info]- Norma IEEE802 
+> **IEEE802.11** = É o padrão internacional que especifica e regulamenta a tecnologia para redes locais sem fios (WLAN- Wireless Local Area Network), comummente conhecida pelo nome comercial **Wi-fi**. 
+> **IEEE802.3** = especifica a tecnologia **Ethernet** (redes locais cabeadas / LAN). Define o funcionamento das placas de rede físicas, os cabos (como o cabo de rede RJ45/UTP) e a transmissão de dados por cabo.
+> **IEEE802.2** = É a norma que fica por cima do MAC(_Logical Link Control_). O **IEEE 802.2** atua como uma **interface universal padronizada** que esconde as diferenças do meio físico (seja cabo Ethernet ou Wi-Fi) das camadas superiores (como o Protocolo IP / Camada de Rede).
+^ieee802
+
+
+```bib title:[47]
+@article{bekmezci2010delay,
+  author  = {Bekmezci, Ilker and Sahingoz, Ozgur Koray},
+  title   = {Delay analysis of IEEE 802.11 based Flying Ad Hoc Networks},
+  journal = {International Journal of Distributed Sensor Networks},
+  volume  = {2010},
+  year    = {2010}
+}
+```
+^r47
+
+```bib title:[48]
+@article{zhai2004packet,
+  author  = {Zhai, Hongqiang and Wang, Jianfeng and Fang, Yuguang},
+  title   = {Packet delay analysis on the IEEE 802.11 MAC protocol},
+  journal = {IEEE Transactions on Wireless Communications},
+  volume  = {3},
+  number  = {5},
+  pages   = {1482--1487},
+  year    = {2004}
+}
+``` 
+^r48
+
+## UAV plataform contraints 
+1. The weight of the hardware 
+	Hardware mais leve significa carga útil mais leve e aumenta a autonomia.
+	E também permite implantar sensores adicionais nos UAVs.
+2. Space limitation 
+	Espacialmente para mini UAVs, o limite de espaço implica que o hardware de comunicação deve caber na plataforma do UAV. 
+## Bandwidth requirement (Requisitos de Largura de banda)
+Existem muitas restrições ao uso da largura de banda disponível, tais como:
+
+- capacidade do canal de comunicação,
+    
+- velocidade dos VANTs,
+    
+- estrutura suscetível a erros das ligações sem fios,
+    
+- falta de segurança associada à comunicação por difusão (_broadcast_).
+    
+
+Um protocolo para FANETs deve satisfazer o requisito de capacidade de largura de banda, de modo a conseguir retransmitir imagens ou vídeos em tempo real de altíssima resolução sob diversas restrições.
+
+> [!info]- Largura de banda
+> **capacidade máxima de transferência de dados de um canal de comunicação** num determinado intervalo de tempo. Expressa em bits por segundo. 
 
 
 # Glossary 
