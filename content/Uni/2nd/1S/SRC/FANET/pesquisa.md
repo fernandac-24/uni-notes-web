@@ -70,8 +70,10 @@ title: Filtragem do gemini (minhas notas + artigo)
         
     - Como a velocidade é alta, o GPS comercial sozinho (precisão de $10-15 \text{ m}$) pode ser lento ou impreciso. Por isso, o artigo refere que cada drone deve ter um GPS combinado com uma **IMU (Inertial Measurement Unit)** para estimar a posição exata em frações de segundo.
         
-
-### 3. Abordagens DTN (_Delay-Tolerant Networking_)
+### 3. Desafios na Camada MAC:
+- Soluções Full-Duplex e Multi-Packet Reception (MPR):
+		Análise dos estrangulamentos do MAC tradicional em FANETs e como a combinação de rádios _Full-Duplex_ com capacidade _MPR_ mitiga colisões, reduz a latência e aumenta o débito (_throughput_) da rede.
+### 3. ~~Abordagens DTN (_Delay-Tolerant Networking_)~~
 
 - **O que o artigo diz:**
     
@@ -80,7 +82,7 @@ title: Filtragem do gemini (minhas notas + artigo)
     - O DTN resolve isso armazenando os dados na memória do drone até que ele volte a estar ao alcance de outro drone para retransmitir (_Store-Carry-and-Forward_).
         
 
-### 4. Abordagem Cross-Layer e Resiliência
+### 4. ~~Abordagem Cross-Layer e Resiliência~ 
 
 - **O que o artigo diz:**
     
@@ -130,13 +132,13 @@ title: Filtragem do gemini (minhas notas + artigo)
         
     - **O que ler:** Explica por que o roteamento baseado na posição geográfica (_Greedy Perimeter Stateless Routing - GPSR_) supera o roteamento topológico em FANETs densas e porque é necessário associar sensores IMU ao GPS.
         
-- **Abordagens DTN (_Delay-Tolerant Networking_):**
+- ~~**Abordagens DTN (_Delay-Tolerant Networking_):**
     
     - **Onde encontrar:** **Secção 3.2.1 (Adaptability)** (pág. 1258) e **Secção 4.3.1 (Open research issues no Network Layer)** (pág. 1264-1265).
         
     - **O que ler:** Trechos que discutem como lidar com desconexões frequentes (_link outages_) armazenando os pacotes até que surja um novo nó vizinho.
         
-- **Arquiteturas Cross-Layer e Resiliência:**
+- ~~**Arquiteturas Cross-Layer e Resiliência:**
     
     - **Onde encontrar:** **Secção 4.5 (Cross-layer design)** e **Secção 4.5.1 (Open research issues)** (pág. 1265).
         

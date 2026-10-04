@@ -170,7 +170,7 @@ Drones voam rápido e em um espaço tridimencional. Isso faz com que a distânci
 Qualidade do Sinal: Conforma os drones se movimentam, eles acabam por se afastar,  são separados por obstaculos, o que pode contribui para o sinal de rádio enfraquecer ou acir repentinamente, forçando a rede a recalcular rotas de dados em tempo real. 
 
 ### Radio propagation model 
-Apesar de que os UVAs podem estar muito longe do solo, na maioria dos casos, existe uma linha de vião direta(**line-of-sigth**) entre eles. 
+Apesar de que os UVAs podem estar muito longe do solo, na maioria dos casos, existe uma linha de visão direta(**line-of-sigth**) entre eles. 
 
 ### Power consumption and network lifetime
 Enquanto para os MANETs têm problemas com a vida útil da rede(network), devido a sua dependência em dispositivos computacionais alimentados por bateria. O hardware de comunicação FANET  é alimentada pela fonte de energia do UVA. Isso significa que o hadware não apresenta nenhum problema prático com fonte de energia. 
@@ -269,6 +269,60 @@ Um protocolo para FANETs deve satisfazer o requisito de capacidade de largura de
 > [!info]- Largura de banda
 > **capacidade máxima de transferência de dados de um canal de comunicação** num determinado intervalo de tempo. Expressa em bits por segundo. 
 
+# Communication protocols for FANETs
+
+## 4.2.1 Challenges of FANET MAC layer
+
+
+## 4.3 Network layer
+
+### Clusters  (Hierarchical Protocols)
+Routing solutions for FANETs 
+
+A rede é composta por clusters (aglomerados) distribuidos por diferentes áreas de missão. Cada cluster possui um _Cluster Head (CH)_, e todos o snós pertencentes a esse cluster encomtram-se dentro do alcance de transmissão direta do respectivo CH. 
+
+O CH estabelece ligação com os UVAs da camada superior ou com o satélite, direta ou indiretamente, representando a totalidade dos clusters. 
+
+O CH agrega os dados recolhidos pelos seus membros e encarrega-se da comunicação de longo alcance com os CHs de outros _clusters_, com satélites ou com a Estação de Solo (GCS).
+
+
+Por outro lado os CH também podem disseminar dados transmitidos por broadcasting para os menbros do seu cluster. 
+
+-> Citar esse artigo 
+> [!quote] _This review will assist researchers and engineers in selecting the most effective and dependable cluster-based routing algorithms for the deployment of FANETs._
+
+```bib
+@article{https://doi.org/10.1002/ett.4068,
+author = {Bhardwaj, Vinay and Kaur, Navdeep and Vashisht, Sahil and Jain, Sushma},
+title = {SecRIP: Secure and reliable intercluster routing protocol for efficient data transmission in flying ad hoc networks},
+journal = {Transactions on Emerging Telecommunications Technologies},
+volume = {32},
+number = {6},
+pages = {e4068},
+doi = {https://doi.org/10.1002/ett.4068},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/ett.4068},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/ett.4068},
+abstract = {Abstract Unmanned aerial vehicles (UAVs) come up with eminent opportunities for military and civilian applications. Such opportunities come with unique challenges. The high mobility of UAVs leads to the frequent change in the network topology that results in packet loss or routing path failure, and so on. Moreover, secure routing is one of the most important features while organizing wireless communication among UAVs. To counter these challenges, a secure and reliable routing protocol (SecRIP) for the flying ad hoc network is proposed for efficient and reliable data transfer. This SecRIP works toward the enhancement of the quality of service (QoS) and quality of experience (QoE) metrics. The SecRIP works on two algorithms: (i) a chaotic algae algorithm and (ii) dragonfly algorithm; these algorithm serves the functionality of cluster selection, management, and data transmission in intercluster. The proposed technique is compared with other existing techniques using a network simulator. The results show that the proposed technique is capable of maintaining the higher QoS and the QoE standards and also helps the nodes conserve their power without compromising on the performance. The simulated results show improvement as it decreases the delay incurred in SecRIP is 24\%, and routing overhead is 19\%, where the PDR of SecRIP is increased by 32\% in comparison with existing protocols. In an extreme case, when node density increases, the SecRIP helps to limits the delay to 41\%, and the PDR is 28\% higher than the other existing protocols. Finally, the result demonstrates that the SecRIP protocol achieves secure and reliable data transmission.},
+year = {2021}
+}
+```
+
+
+> [!info]- Pegar Figura 12 
+> https://ieeexplore.ieee.org/document/9739713
+> A imagem ainda veio de outro artigo 
+> ```bib
+> @article{bhardwaj2021secrip,
+> title={SecRIP: Secure and reliable intercluster routing protocol for efficient data transmission in flying ad hoc networks},
+>  author={Bhardwaj, Vinay and Kaur, Navdeep and Vashisht, Sahil and Jain, Sushma},
+> journal={Transactions on emerging telecommunications technologies},
+>  volume={32},
+>  number={6},
+>  pages={e4068},
+>  year={2021},
+>  publisher={Wiley Online Library}
+>}
+> ```
 
 # Glossary 
 1. _Unmanned Air Vehicle (UVA)_ = commonly known as **drone**, is an aircraft that operates without a human pilot, crew, or passagers on board.  

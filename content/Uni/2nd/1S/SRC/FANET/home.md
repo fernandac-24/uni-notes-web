@@ -40,11 +40,9 @@ title: Pesquisas, fontes e apontamentos para o trabalho
 
 A minha pesquisa foi feita baseada na leitura de um artigo, e tenho todas as minha anotações de leitura [[article1| aqui]]. 
 
+Acabei por fazer a leitura de outra artigo, tenho minhas notas [[ponto4| aqui]].
+
 Depois, foi feita a Estrutura do Ensaio, e fiquei com as partes [[#==2. Arquitetura e Modelos de Redes em FANETs ==| (2)]] e [[#==4. Propostas Relevantes e Protocolos de Encaminhamento==| (4)]]. 
 Com isso pedi auxílio ao gemini para filtrar dos meus apontamentos do artigo o que já podia ser aproveitado e a sua estrutura eu guardei [[pesquisa| nesta nota]]. 
 
 ------------------------------------------------------------------------
-
-# Redigir 
-
-* 
