@@ -2,6 +2,8 @@
 title: 1)Redes Locais de Computadores
 ---
 
+> [!warning] Este resumo foi feito como apoio para pesquisa no trabalho do FANET, então está bastante incompleto!!
+
 # Fontes
 
 > [!tldr]- Slides da aula 

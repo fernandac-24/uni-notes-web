@@ -330,3 +330,32 @@ year = {2021}
 3. Ad-Hoc Network = rede de computadores temporária e descentralizada em que os dispositivos se conectam diretamente uns aos outros, sem precisar de uma infraestrutura fixa ou de um roteador central. 
 4. Markov  = is a  stochastic process describing a sequence of possible events in wich the probability of each event depends only on the state atteined in the previous event. 
 
+
+# Pesquisa 4.1)
+
+> [!tldr]- _"About applying AODV and OLSR routing protocols to relaying network scenario in FANET with mini-UAVs"_
+> ![[PDF.js viewer.pdf]]
+
+
+## O que são Protocolos de roteamento?
+conjunto de regras que permite que os roteadores de uma rede de computadores comuniquem entre si para descobrir o melhor caminho para os dados. 
+
+
+## A. On the routing in FANET
+
+Os protocolos de encaminhamento utlilizados nos FANETs devem cumprir os requisitos considerando:
+* A procura automática da melhor rota (ou grupo de rotas)
+* Qualidade da rota (conetividade)
+* Comprimento da rota (número de saltos/iterações na rota)
+* fração de nós de trânsito (a fração de nós da rede envolvidos no encaminhamento)
+
+
+
+## Proactive routing protocol (OLSR)
+_Os drones estão constatemente a trocar menssgens de controlo entre si para mapear a rede toda. Cada drone guarda uma 'routing table'._
+
+Cada nó fornece informação atualizada sobre o estado da rede a todos os outros nós antes de transmitir pacotes de dados. 
+Cada drone sempre tem rotas para conectar com qualquer outro drone da rede. 
+ 
+Este protocolo matém uma 'tabela de encaminhamento' em cada UAV, reunindo informações de topologia através de mensagem de TC  (Topology Control menssages) e mensagens HELLO. Respectivamente, as TC   
+
