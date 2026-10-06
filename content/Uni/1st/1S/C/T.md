@@ -55,5 +55,6 @@ Go to exercises: [[Uni/1st/1S/C/TP#Sucessões e Séries]]
 Go to exercises: [[Uni/1st/1S/C/TP#Trigonométricas e Hiperbólicas]]
 
 # Resumos 
-*Adicionar meus resumos digitalizados depois*
+>[!tldr]- Todos os meus resumos de Cálculo
+> ![[Resumos_Calculo.pdf]]
 

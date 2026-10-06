@@ -3,6 +3,8 @@ title: Ficha 1
 date: 29/10/26
 ---
 
+_Exercícios 7,8,9 e 11 feitos no dia 06/10/26_
+
 # Exercício 1
 
 ## a) 
@@ -97,14 +99,14 @@ $$
 $$
 ou.. pode-se fazer, sabemos que $1 = 0.1000\times 10^{1}$, e o :
 $$
-\begin{align} 
+\begin{align*} 
 \varepsilon &= (0.1001 \times 10^1) - 1 \\ 
 &= (0.1001 \times 10^1) - (0.1000 \times 10^1) \\ 
 &= (0.1001 - 0.1000) \times 10^1 \\ 
 &= 0.0001 \times 10^1 \\ 
 &= 10^{-4} \times 10^1 \\ 
 &= 10^{-3} 
-\end{align}
+\end{align*}
 $$
 > [!info] **unidade de erro de arrendodamento**
 > É definida como 
@@ -259,10 +261,214 @@ iv = logical
     
 - **Justificação:** O valor $2^{-1075}$ é estritamente menor do que o menor subnormal representável ($2^{-1074}$). Como a máquina não dispõe de bits suficientes para representar uma quantidade inferior a $2^{-1074}$, ocorre o fenómeno de **underflow gradual absoluto**, fazendo com que o valor seja truncado/arredondado para **zero absoluto** ($0$). Logo, a igualdade com $0$ é verdadeira.
 
+# Exercício 5 
+Considere o sistema $\mathcal{F} (10, 4, −99, 99)$, com arredondamento usual.
+
+## a)
+Dados x = 0.8348, y = 0.4316 × 10−4 e z = 0.4721 × 10−4, calcule $(x \bigoplus y) \bigoplus z$ e $x \bigoplus (y \bigoplus z)$ e comente os resultados.
+
+$$
+\begin{align*}
+x + y &= 0.8348 + 0.4316 \times 10^{-4} \\
+&= 0.83484316 \times 10^0 
+\end{align*}
+$$
+
+E portanto, 
+
+$$
+\begin{align*}
+x \bigoplus y = fl(x + y) \\
+&= fl(0.83484316)
+&= 0.8348
+\end{align*}
+$$
+
+> [!info] Arrendondamento 
+> 
+
+
+
+
 # Exercício 6
 |  $\displaystyle x$  |  $\displaystyle \tilde{x}$  |  $\displaystyle E_{\tilde{x} }$  |$\displaystyle p$  |  $\displaystyle q$   |
 | -- | -- | -- | -- | -- |
 | $\displaystyle e^5 \approx 0.6737947$ | $\displaystyle 0.6738\times 10^2$  |$\displaystyle \lvert e⁵-0.6738\times10²\rvert \approx-5.3001\times10^{-6}<0.\times10^{-6}$ | 6 | 4  |
 | $\displaystyle (4.231)^4 \approx 0.3204587 \times 10^3$ | $\displaystyle 0.3205\times 10^3$  | $\displaystyle \lvert(4.231)⁴ - 0.3205 \times 10³ \rvert \approx 0.0413 < 0.5 \times 10^{-1}$ | 1 | 4 |
 | $\displaystyle \sin (1.1)$  | $\displaystyle 0.891209$  | $\displaystyle \lvert sin(1.1) - 0.891209 \rvert \approx 1.6399 \times 10^{-6} < 0.5 \times 10^{-5}$ | 5 | 5 |
+
+# Exercício 7
+
+Pretende-se obter aproximações com precisão de cinco algarismos significativos para os números 1/6, 1/11, π/100, e3 e ln 5.
+
+## a)
+Calcule as aproximações indicadas, sem recorrer à função `round`.
+
+```mathlab title:
+format long
+1/6
+``` 
+
+```mathlab title:Resultado 
+ans =
+
+	0.166666666666667
+``` 
+
+Aproximando o valor, temos que identificar os primeiros 5 dígitos significativos e aplicar a regra de arredondamento no 6.º dígito.
+$$
+\begin{align*}
+\frac{1}{6} \approx 0.16667
+\end{align*}
+$$
+------------------------------------------------------------------------
+
+```mathlab title:
+format long
+1/11
+``` 
+
+```mathlab title:Resultado 
+ans =
+
+	0.090909090909091
+``` 
+
+Aproximando o valor, temos que identificar os primeiros 5 dígitos significativos (dígitos depois da vígula diferentes de zero) e aplicar a regra de arredondamento no 6.º dígito.
+$$
+\begin{align*}
+\frac{1}{11} \approx 0.090909
+\end{align*}
+$$
+
+---------------------------------------------------------------------
+```mathlab title:
+format long
+pi/100
+``` 
+
+```mathlab title:Resultado 
+ans =
+
+	0.031415926535898
+``` 
+
+Aproximando o valor, temos que identificar os primeiros 5 dígitos significativos e aplicar a regra de arredondamento no 6.º dígito.
+$$
+\begin{align*}
+\frac{\pi}{100} \approx 0.03141
+\end{align*}
+$$
+
+------------------------------------------------------------------------
+```mathlab title:
+format long
+exp(3)
+``` 
+
+```mathlab title:Resultado 
+ans =
+
+	20.085536923187668
+``` 
+
+Aproximando o valor, temos que identificar os primeiros 5 dígitos significativos e aplicar a regra de arredondamento no 6.º dígito.
+$$
+\begin{align*}
+e^3 \approx 0.03141
+\end{align*}
+$$
+------------------------------------------------------------------------
+```mathlab title:
+format long
+log(5)
+``` 
+
+```mathlab title:Resultado 
+ans =
+
+	1.609437912434100
+``` 
+
+Aproximando o valor, temos que identificar os primeiros 5 dígitos significativos e aplicar a regra de arredondamento no 6.º dígito.
+$$
+\begin{align*}
+ln(5) \approx 1.6094
+\end{align*}
+$$
+
+## b)
+Use a função `round` para confirmar as respostas na alínea anterior. Escolha o formato longg e, ao usar a função round, escolha a opção ’Significant’.
+
+
+# Exercício 8
+Seja 
+$$ 
+f(x) = \sin \big(\frac{\pi}{2} + x\big) -1
+$$
+
+## a)
+Calcule $y = f (10^{−8})$ , usando o Matlab.
+
+Resultado no Mathlab dá zero. 
+
+## b)
+Relembrando que
+$$ 
+\sin(a) - \sin(b) = 2 \sin \big(\frac{a-b}{2}\big) \cos\big(\frac{a+b}{2}\big)
+$$
+
+sugira uma forma alternativa de avaliar $f(x)$ e use-a para estimar, novamente, o valor de y referido em a).
+
+
+$$
+\begin{align*}
+f(x) &= \sin \big(\frac{\pi}{2} + x\big) -1 \\
+&=  \sin \big(\overbrace{\frac{\pi}{2} + x}^{\text{a}}\big) - \sin \big( \overbrace{\frac{\pi}{2}}^{\text{b}} \big)
+&= \overbrace {2 \sin \big(\frac{x}{2}\big) \cos \big(\frac{\pi + x}{2}\big)}^{\text{g(x)}} 
+\end{align*}
+$$
+
+
+
+# Exercício 9 
+> [!warning] Não entedi esse exercício :\
+
+Encontre fórmulas alternativas para calcular as expressões abaixo indicadas, de modo a evitar o efeito do cancelamento subtrativo:
+## a)
+
+$$ 
+\begin{align*}
+f(x) &= \sqrt{1 + x} -1 \\
+&= (\sqrt{1+x} -1) \frac{\sqrt{1+x} + 1}{\sqrt{1 + x} +1} \\
+&= \frac{1 + x -1}{\sqrt{1+x} + 1} \\
+&= \frac{x}{\sqrt{1+x}+1}
+\end{align*}
+$$
+
+## b)
+$$
+\begin{align*}
+f(x) &= 1 - \cos(x) \\
+&= (1 - \cos(x)) \big(\frac{1 + \cos(x)}{1+\cos(x)} \big)
+= \frac{1 - \cos^2(x)}{1 + \cos(x)} \\
+&= \frac{\cancel{ 1 } - (\cancel{ 1 } - \sin^2(x))}{1 + \cos(x)} 
+= \frac{\sin^2(x)}{1+\cos(x)}
+\end{align*}
+$$
+
+## c) 
+$$
+\begin{align*}
+f(x) &= \frac{1}{1-x} - \frac{1}{1+x} \\
+&= \frac{(1+x)-(1-x)}{(1-x)(1+x)} 
+= \frac{\cancel{ 1 } + x \cancel{ -1 } +x}{1+\cancel{ x }\cancel{ -x }-x^2} \\
+=& \frac{2x}{1-x^2}
+\end{align*}
+$$
+# Exercício 11 
+
+## a)
+Calcule o número de condição das funções $f(x) = \sqrt{x}$ e $g(x) = x^n$, $n \in N$ e comente sobre o condicionamento dessas funções.
+
 

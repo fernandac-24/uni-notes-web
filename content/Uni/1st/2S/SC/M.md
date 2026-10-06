@@ -11,3 +11,7 @@ title: Sistemas da Computação
 # Playlist no Youtube 
 [Minha Playlist no Youtube](https://youtube.com/playlist?list=PLRFyPrglGxj0XcR3mQrMqG6Mu_RbCV0fE&si=QclV1apT99qbs2dE)
 
+
+# Resumos
+> [!tldr]- Meus resumos de sistemas 
+> ![[Resumos_Sistemas.pdf]]

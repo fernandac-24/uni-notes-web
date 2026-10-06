@@ -9,6 +9,9 @@ title: Material Análise Numérica
 > [!tldr]- Click here to view PDF
 > ![[textos_MATLAB_LCC.pdf]]
 
+# Resolução das fichas
+* [[Aula2|Ficha 1]] - [IN PROGRESS]
+* [[Aula3|Fica2]] - [IN PROGRESS]
 
 # Erros Estabilidade 
 
@@ -21,5 +24,6 @@ title: Material Análise Numérica
 
 > [!tldr]- Clik here to view **ficha**
 > ![[ExerciciosErrosEstabilidade.pdf]]
+
 
 

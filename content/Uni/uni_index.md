@@ -99,7 +99,6 @@ Organized by years:
 
 <details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
   <summary style="font-weight: bold; cursor: pointer;">💾 Sistemas da Computação </summary>
-  <p style="margin-top: 0.5rem;">⚠ Soon I will add my summarys ⚠</p>
   <ul>
     <li><a href="Uni/1st/2S/SC/M">Teory & Practical</a></li>
   </ul>
@@ -116,9 +115,24 @@ Organized by years:
 </details>
 
 <details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
-  <summary style="font-weight: bold; cursor: pointer;">Lógica CC  </summary>
+  <summary style="font-weight: bold; cursor: pointer;">Lógica CC </summary>
   <ul>
-    <li><a href="Uni/2nd/1S/LC/M"></a>Teory & Practical</li>
+    <li><a href="Uni/2nd/1S/LC/M">Teory & Practical</a></li>
+  </ul>
+</details>
+
+<details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
+  <summary style="font-weight: bold; cursor: pointer;">Análise Numérica </summary>
+  <ul>
+    <li><a href="Uni/2nd/1S/AN/M">Teory & Practical</a></li>
+  </ul>
+</details>
+
+<details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
+  <summary style="font-weight: bold; cursor: pointer;">Sistemas da Comunicação e Redes </summary>
+  <ul>
+    <li><a href="Uni/2nd/1S/SCR/M">Teory & Practical</a></li>
+    <li><a href="Uni/2nd/1S/SCR/FANET/home">Pesquisa FANETs:Rede de Drones</a></li>
   </ul>
 </details>
 
