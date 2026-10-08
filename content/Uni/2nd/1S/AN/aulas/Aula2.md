@@ -471,4 +471,29 @@ $$
 ## a)
 Calcule o número de condição das funções $f(x) = \sqrt{x}$ e $g(x) = x^n$, $n \in N$ e comente sobre o condicionamento dessas funções.
 
+> [!info]- **Número de condição**
+> $$
+> \displaystyle
+> cond f(x) = \left\lvert \frac{xf'(x)}{f(x)} \right\rvert
+> $$
+>  Se $cond f(x)$ é **pequeno**, o problema de calcular $f(x)$ é **bem** condicionado;
+>  Se $cond f(x)$ é **grande**, o problema de calcular $f(x)$ é **mal** condicionado.
+
+
+$$
+f'(x) = \frac{-1}{2 \sqrt{ x }}
+$$
+
+Logo, temos que o número de condição de $f(x)$ é
+$$
+\begin{align*}
+cond f(x) &= \left\lvert \frac{x \left( \frac{-1}{2 \sqrt{ x }} \right)}{\sqrt{ x }} \right\rvert 
+&= \left\lvert \frac{\frac{-x}{2\sqrt{ x }}}{\sqrt{ x }} \right\rvert \\
+&= \left\lvert \frac{-x}{2x} \right\rvert 
+&= \left\lvert \frac{-1}{2} \right\rvert \\
+&= \frac{1}{2}
+ \end{align*} 
+$$
+
+Como $\frac{1}{2}$ é pequeno a função $f(x)$ é bem condicionada. 
 
