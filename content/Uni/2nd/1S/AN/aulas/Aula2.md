@@ -467,10 +467,6 @@ f(x) &= \frac{1}{1-x} - \frac{1}{1+x} \\
 \end{align*}
 $$
 # Exercício 11 
-
-## a)
-Calcule o número de condição das funções $f(x) = \sqrt{x}$ e $g(x) = x^n$, $n \in N$ e comente sobre o condicionamento dessas funções.
-
 > [!info]- **Número de condição**
 > $$
 > \displaystyle
@@ -478,6 +474,9 @@ Calcule o número de condição das funções $f(x) = \sqrt{x}$ e $g(x) = x^n$, 
 > $$
 >  Se $cond f(x)$ é **pequeno**, o problema de calcular $f(x)$ é **bem** condicionado;
 >  Se $cond f(x)$ é **grande**, o problema de calcular $f(x)$ é **mal** condicionado.
+## a)
+Calcule o número de condição das funções $f(x) = \sqrt{x}$ e $g(x) = x^n$, $n \in N$ e comente sobre o condicionamento dessas funções.
+
 
 
 $$
@@ -497,3 +496,78 @@ $$
 
 Como $\frac{1}{2}$ é pequeno a função $f(x)$ é bem condicionada. 
 
+-----------------------------------------------------------------------
+
+$$
+g'(x) = nx^{n-1}
+$$
+
+$$
+\begin{align*}
+cond g(x) &= \left\lvert \frac{nx^{n-1}}{x^n}\right\rvert \\
+&= \left\lvert \frac{nx^{n}}{x^n}\right\rvert \\
+&= |n|
+\end{align*}
+$$
+
+O condicionamento da função depende do n,  ${}g{}$ é:
+* bem condicionada quando n é pequeno.
+* mal concionado quando n é grande. 
+
+## b)
+Calcule o número de condição das funções $f (x) = exp(x)$ e $g(x) = \ln x$ e diga para que valores de x o cálculo dessas funções tem problemas de condicionamento.
+
+$$
+f'(x) = \frac{1}{x}
+$$
+
+$$
+\begin{aling*}
+cond f(x) = \frac{|x|\cancel{ e^x }}{\cancel{ e^x }} = |x|
+\end{align*}
+$$
+O condicionamento da função depende do x,  ${}g{}$ é:
+* bem condicionada quando x é pequeno.
+* mal concionado quando x é grande. 
+-----------------------------------------------------------------
+$$
+f'(x) = e ^{x}
+$$
+
+$$
+\begin{align*}
+cond f(x) = \left\lvert \frac{\cancel{ x } \frac{1}{\cancel{ x }}}{\ln(x)}\right\rvert 
+= \frac{1}{|\ln(x)|}
+\end{align*}
+$$
+
+Logo, 
+$$ 
+\begin{cases}
+\text{Se } x \approx 1, & \text{mal condicionado (pois } \ln(1) = 0 \text{)} \\
+\text{Caso contrário}, & \text{bem condicionado}
+\end{cases} 
+$$
+
+
+
+# c)
+Discuta o condicionamento da função $f (x) = sen(x)$ para valores de x próximos de zero e para valores de x próximos de ${}\pi{}$.
+
+>[!attention] Não entendi esse muito bem 
+
+$$
+f'(x) = \cos (x)
+$$
+
+$$
+cond f(x)= \left\lvert \frac{x\cos(x)}{\sin(X)} \right\rvert
+$$
+
+Logo,
+$$
+\begin{cases}
+\text{Se } x \approx 0, & cond f(0) \approx 1 \implies \text{bem condicionado} \\
+\text{Se } x \approx \pi, & cond f(\pi) \approx \ +\infty \implies \text{mal condicionado} 
+\end{cases} 
+$$
