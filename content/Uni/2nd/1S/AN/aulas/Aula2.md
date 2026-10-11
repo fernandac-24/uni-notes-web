@@ -524,7 +524,7 @@ $$
 $$
 \begin{aling*}
 cond f(x) = \frac{|x|\cancel{ e^x }}{\cancel{ e^x }} = |x|
-\end{align*}
+\end{aling*}
 $$
 O condicionamento da função depende do x,  ${}g{}$ é:
 * bem condicionada quando x é pequeno.

@@ -452,76 +452,72 @@ Para  $D_{1}(x) = (1010)$ :
 	* $x^3 \times D_{1}(x) = x^3 \times (1+x^2) = x^3 + x^5$
 3. Efetuar a divisão polinomial por ${}G(x)= x^3 + x + 1{}$
 $$
-\begin{array}{r@{\quad}l}
-   x^5 + x^3   & \Big\lfloor \underline{x^3 + x + 1} \\
-  -\left(x^5 + x^3 + x^2\right)  &  \quad x^2\\
-  \hline
-  0 \quad 0 \quad 1 
-\end{array}
+\begin{align*}
+x^5 + x^3 &\quad \Big\lfloor x^3 + x + 1 \\
+-\left(x^5 + x^3 + x^2\right) &\quad x^2 \\
+\hline
+0 \quad 0 \quad 1 &
+\end{align*}
 $$
 
-$$
-\text{Resto} = x^2 = 001
-$$
+$$\text{Resto} = x^2 = 001$$
 
-$$
-\begin{array}{c}
-  \underbrace{0 \quad 0 \quad 1}_{x^0 \quad x^1 \quad x^2} \quad \Big| \quad 1 \quad 0 \quad 1 \quad 0
-\end{array}
-$$
+$$\underbrace{0 \quad 0 \quad 1}_{x^0 \quad x^1 \quad x^2} \quad \Big| \quad 1 \quad 0 \quad 1 \quad 0$$
 
 Para $D_{2} = (1100)$
-1. Converter os dados pem polinómio
-	$D_{2} = 1 + x$ 
+1. Converter os dados para polinómio:
+   $$D_{2} = 1 + x$$
 2. Multiplicar por $x^3$:
-	$x^3 \times D_{2}(x) = x^3 \times (1+x) = x^3 + x^4$
-3. Divisão 
-$$
-\begin{array}{r@{\quad}l}
-  x^4 + x^3 & \Big\lfloor \underline{x^3 + x + 1} \\ 
-  -\left(x^4 + x^2 + x\right) & \quad x \\
-  \hline 
-  x^3 + x^2 + x & \quad 1  \\
-  -\left(x^3 + x + 1\right) &  \\
-  \hline 
-    \left(x^2 + 1\right) &  \text{ <-- Resto}
-\end{array}
-$$
-
-##### Se o receptor receber a palavra de código C = (0110101) será esta válida no contexto do código referido ? Justifique.
-
-> [!note] Para saber se uma palavra de código recebida é válida, o recetor tem de fazer a divisão exata de toda a palavra recebida por g=(1011). 
-> Se o resto for diferente de (000), há um erro e a palavra é inválida. 
-
-1. Converter C para polinómio
-	${}C = 0 \times x^0 + 1 \times x^1 + 1 \times x^2 + 0 \times x^3 + 1 \times x^4 + 0 \times x^5 + 1 \times x^6 = x^6 + x^4 + x^2 + x{}$
-2. Dividir 
+   $$x^3 \times D_{2}(x) = x^3 \times (1+x) = x^3 + x^4$$
+3. Divisão:
 
 $$
-\begin{array}{r@{\quad}l}
-  x^6 + x^4 + x^2 + x & \Big\lfloor \underline{x^3 + x + 1}  \\
-  -\left(x^6 + x^4 + x^2\right) & \quad x^3  \\
-  \hline 
-  x^3 + x^2 + x & \quad 1 \\
-  -\left(x^3 + x + 1\right) &  \\
-  \hline 
-  x^2 + x & \text{--Resto}\\
-\end{array}
+\begin{align*}
+x^4 + x^3 &\quad \Big\lfloor x^3 + x + 1 \\
+-\left(x^4 + x^2 + x\right) &\quad x \\
+\hline
+x^3 + x^2 + x &\quad 1 \\
+-\left(x^3 + x + 1\right) & \\
+\hline
+(x^2 + 1) &\quad \text{<-- Resto}
+\end{align*}
 $$
 
-Como o resto é diferente de 0, a mensaagem C é inválida. 
+##### Se o receptor receber a palavra de código C = (0110101) será esta válida no contexto do código referido? Justifique.
 
-##### E se a palavra recebida for C = (0011010) ?
-1. Converter C para polinómio 
-	$C = 0 \times x^0 +  0 \times x^1 + 1 \times x^2 + 1 \times x^3 + 0 \times x^4 + 1 \times x^5 + 0 \times x^6 = x^5 + x^3 + x^2$
-2. Dividir 
+> [!note] Para saber se uma palavra de código recebida é válida, o recetor tem de fazer a divisão exata de toda a palavra recebida por $g = (1011)$. 
+> Se o resto for diferente de $(000)$, há um erro e a palavra é inválida. 
+
+1. Converter C para polinómio:
+   $$C = 0 \times x^0 + 1 \times x^1 + 1 \times x^2 + 0 \times x^3 + 1 \times x^4 + 0 \times x^5 + 1 \times x^6 = x^6 + x^4 + x^2 + x$$
+2. Dividir:
+
 $$
-\begin{array}{r@{\quad}l} \\
-x^5 + x^3 + x^2 & \Big\lfloor \underline{x^3 + x + 1} \\
--\left(x^5 + x^3 + x^2\right) & x^2 \\
-\hline  
-0 & \text{-- Resto}
-\end{array}
+\begin{align*}
+x^6 + x^4 + x^2 + x &\quad \Big\lfloor x^3 + x + 1 \\
+-\left(x^6 + x^4 + x^2\right) &\quad x^3 \\
+\hline
+x^3 + x^2 + x &\quad 1 \\
+-\left(x^3 + x + 1\right) & \\
+\hline
+x^2 + x &\quad \text{-- Resto}
+\end{align*}
+$$
+
+Como o resto é diferente de 0, a mensagem C é inválida. 
+
+##### E se a palavra recebida for C = (0011010)?
+1. Converter C para polinómio:
+   $$C = 0 \times x^0 + 0 \times x^1 + 1 \times x^2 + 1 \times x^3 + 0 \times x^4 + 1 \times x^5 + 0 \times x^6 = x^5 + x^3 + x^2$$
+2. Dividir:
+
+$$
+\begin{align*}
+x^5 + x^3 + x^2 &\quad \Big\lfloor x^3 + x + 1 \\
+-\left(x^5 + x^3 + x^2\right) &\quad x^2 \\
+\hline
+0 &\quad \text{-- Resto}
+\end{align*}
 $$
 
 Como o resto é 0, a palavra é válida. 
