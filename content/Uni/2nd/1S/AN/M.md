@@ -10,7 +10,7 @@ title: Material Análise Numérica
 > ![[textos_MATLAB_LCC.pdf]]
 
 # Resolução das fichas
-* [[Aula2|Ficha 1]] - [IN PROGRESS]
+* [[Aula2|Ficha 1]] 
 * [[Aula3|Fica2]] - [IN PROGRESS]
 
 # Erros Estabilidade 

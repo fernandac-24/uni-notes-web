@@ -2,6 +2,9 @@
 title: Ficha 1
 date: 29/10/26
 ---
+> [!tldr]- Clique aqui para ver ficha
+> ![[ExerciciosErrosEstabilidade.pdf]]
+
 
 _Exercícios 7,8,9 e 11 feitos no dia 06/10/26_
 
