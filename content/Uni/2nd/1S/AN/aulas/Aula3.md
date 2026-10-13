@@ -131,3 +131,111 @@ $$
 
 O majorante obtido ($0.00730$) é **superior** ao erro efetivo ($0.00402$), o que valida a teoria (o erro real nunca ultrapassa o limite máximo estimado pelo majorante).
 
+----------------------------------------------------------------------
+
+**Resolução do professor**
+Podemos aplicar a fórmula do [[#Pontos igualementes espaçados (h) com x ${} in [a,b]{}$| erro para pontos igualmentes espaçados]] 
+Pois como temos apenas dois pontos, automanticamente eles são igualemte espaçados. 
+$$
+|E_{1}(x)| \leq \frac{h^2}{8}M_{2} = \frac{(0.4)^2}{8} \sin(0.4) = 0.0078
+$$
+
+## c)
+Repita, usando interpolação por um polinómio do segundo grau (interpolação quadrática ou parabólica).
+### a) 
+Aplicando a [[#Formula de Lagrange]], obtemos:
+$$
+\begin{align*}
+P_{3}(x) = \biggl( \frac{x-x_{2}}{x_{1}-x_{2}}\biggr) \biggl(\frac{x-x_{3}}{x_{1}-x_{3}} \biggr) y_{1} + \biggl( \frac{x-x_{1}}{x_{2}-x_{1}}\biggr) \biggl(\frac{x-x_{3}}{x_{2}-x_{3}} \biggr) y_{2} + \biggl( \frac{x-x_{1}}{x_{3}-x_{1}}\biggr) \biggl(\frac{x-x_{2}}{x_{3}-x_{2}} \biggr) y_{3}
+\end{align*}
+$$
+
+Calculando, temos :
+$$
+\frac{-x(x-0.6)}{0.08}\sin(0.4) + \frac{x(x-0.4)}{0.12}\sin(0.6) \approx 0.2495
+$$
+
+### b)
+$$
+|E_{2}(x)| = \frac{M_{3}}{3!} \left\lvert (x-x_{1})(x-x_{2})(x-x_{3})\right\rvert
+$$
+Onde, 
+$$
+f'(x) = -\cos(x)
+f''(x) = -\sin(x)
+f'''(x) = \cos(x)\\
+\\
+M_{3} = |\cos(0)| = 1
+$$
+
+Logo, 
+$$
+|E_{2}(x)| = \frac{1}{3!}\left\lvert (x-0)(x-0.4)(x-0.6)\right\rvert \approx 0.0022
+$$
+
+O erro de facto é de:
+$$
+|E_{2}(x)| = |f(x) - P_{2}(x)| = |\sin(0.25) - P_{2}(0.25)| = 0.0021
+$$
+
+# 2
+TPC ...
+
+# 3 
+## a) 
+Pretende-se construir uma tabela de valores da função $f (x) = cos x$, em pontos igualmente espaçados no intervalo [0, 1], de modo que, ao usar interpolação por um polinómio do segundo grau usando pontos dessa tabela para estimar o valor de $cos x$ para qualquer $x \in [0, 1]$,  se obtenha uma aproximação com precisão de três casas decimais. Qual deverá ser o número mínimo de entradas da tabela?
+
+Se queremos uma precisão de 3 casas decimais, podemos rescrever isso como: $|E_{2}(x)| \leq 0.5 \times 10^{-3}$. 
+
+E, como os pontos são _igualmente espaçados_, temos:
+$$
+|E_{2}(x)| \leq \frac{\sqrt{3} h^3}{27}M_{3}
+$$
+
+Onde, ${}M_{3}= max|f^{(3)}(x)|{}$, com ${}x \in[0,1]{}$. 
+Ou seja, ${}M_{3}= \sin(1){}$.
+
+Calculando, temos:
+$$
+\frac{\sqrt(3)h^3}{27}M_{3} \leq 0.5 \times 10^{-3} \\
+\iff h^3 \leq \frac{0.5 \times 10^{-3} \times 27}{\sqrt{3} \sin(1)} \\
+\iff h^3 \leq 0.2100
+$$
+
+O ${}h{}$ consiste, justamente no espaçamento entre os pontos e pode ser rescrito para pontos ${}x_{1},x_{2},\dots,x_{n} \in [a,b]{}$, como sendo ${}h = \frac{b-a}{N}{}$, onde N é o número de subintervalos ( ${}N \in \mathbb{N}{}$. 
+
+$$
+\iff h^3 \leq 0.2100 \\
+\iff \frac{b-a}{N} \leq 0.2100 \iff \frac{0-1}{N} \leq 0.2100 \\
+\iff N \geq \frac{1}{0.21} \\
+\iff N \geq 4.7616
+$$
+E, portanto, ${}N = 5{}$. 
+Logo, são preciso ${} n  = N + 1 = 6{}$ pontos. 
+
+-> Para além do exercício...
+Podemos definir os pontos, bastava saber que o ${} h = \frac{1-0}{5} = 0.2{}$ 
+
+temos os potos ${}(x_{1}= 0, x_{2}=0.2, x_{3}=0.4, x_{5}=0.8, x_{6}= 1){}$. 
+
+## b)
+
+Calculando o ${}P_{2}(0.23){}$ no mathlab:
+
+```mathlab 
+# 2)
+
+p1 = (((0.23-0.2)/(0-0.2)) * ((0.23-0.4)/(0-0.4))) * cos(0)
+
+p2 = (((0.23-0)/(0.2-0)) * ((0.23-0.4)/(0.2-0.4))) * cos(0.2)
+
+p3 = (((0.23-0)/(0.4-0)) * ((0.23-0.2)/(0.4-0.2))) * cos(0.4)
+
+  
+
+P2 = p1+p2+p3
+
+  
+
+error = abs(cos(0.23) - P2)
+``` 
