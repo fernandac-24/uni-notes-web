@@ -43,7 +43,9 @@ $$
 $$
 n = 2 : |f(x) - P_{1}(x)| \leq \frac{h^2}{8} M_{2} \\
 \\
+\\
 n = 3 : |f(X) - P_{2}(x)| \leq \frac{\sqrt{3} h^3}{27} M_{3} \\
+\\
 \\
 n = 4 : |f(X) - P_{3}(x)| \leq \frac{h^4}{24} M_{4}
 $$
@@ -219,6 +221,11 @@ Podemos definir os pontos, bastava saber que o ${} h = \frac{1-0}{5} = 0.2{}$
 temos os potos ${}(x_{1}= 0, x_{2}=0.2, x_{3}=0.4, x_{5}=0.8, x_{6}= 1){}$. 
 
 ## b)
+Determine, por interpolação quadrática, uma aproximação para $\cos(0.23)$ com 3 casas decimais de precisão. 
+
+Como já calculamos na alinha a), temos o $h = 0.2$ 
+
+
 
 Calculando o ${}P_{2}(0.23){}$ no mathlab:
 
