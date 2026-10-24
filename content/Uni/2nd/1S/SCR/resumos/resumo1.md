@@ -67,7 +67,7 @@ componente de hardware (placa física ou circuito integrado) instalado em cada e
 * Repetidores (Repeater)
 	Equipamento da Camada 1 (Física) que regenera e amplifica o sinal elétrico/óptico enfraquecido pela distância, permitindo estender o alcance do cabo.
 * Hub (Concentrador)
-	Funciona como um repetidor de múltiplas portas. Recebe os dados de uma porta e **replica-os para todas as outras portas** (_broadcast_), o que causa colisões e torna a rede menos eficiente.
+	Funciona como um repetidor(camada 1) de múltiplas portas. Recebe os dados de uma porta e **replica-os para todas as outras portas** (_broadcast_), o que causa colisões e torna a rede menos eficiente.
 * Bridge (Ponte) e Switch (Comutador):
 	Equipamentos da Camada 2 (Ligação de Dados). O **Switch** é uma evolução direta e moderna da _Bridge_. Em vez de enviar dados para toda a gente como o Hub, o Switch lê os endereços físicos (**MAC addresses**) e envia a informação **apenas para a porta do destinatário correto**.
 * Router (Roteador):

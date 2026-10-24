@@ -36,7 +36,7 @@ $$
 M_{n} \geq \left\lvert f^{(n)} (x)\right\rvert
 $$
 
-## Pontos igualementes espaçados (h) com x ${}\in [a,b]{}$
+## Pontos igualmentes espaçados (h) com x ${}\in [a,b]{}$
 
 > [!note] Não entendo nada dessa parte hehe
 
@@ -136,7 +136,7 @@ O majorante obtido ($0.00730$) é **superior** ao erro efetivo ($0.00402$), o qu
 ----------------------------------------------------------------------
 
 **Resolução do professor**
-Podemos aplicar a fórmula do [[#Pontos igualementes espaçados (h) com x ${} in [a,b]{}$| erro para pontos igualmentes espaçados]] 
+Podemos aplicar a fórmula do [[#Pontos igualmentes espaçados (h) com x ${} in [a,b]{}$|erro para pontos igualmentes espaçados]] 
 Pois como temos apenas dois pontos, automanticamente eles são igualemte espaçados. 
 $$
 |E_{1}(x)| \leq \frac{h^2}{8}M_{2} = \frac{(0.4)^2}{8} \sin(0.4) = 0.0078
@@ -200,7 +200,9 @@ Ou seja, ${}M_{3}= \sin(1){}$.
 Calculando, temos:
 $$
 \frac{\sqrt(3)h^3}{27}M_{3} \leq 0.5 \times 10^{-3} \\
+\\
 \iff h^3 \leq \frac{0.5 \times 10^{-3} \times 27}{\sqrt{3} \sin(1)} \\
+\\
 \iff h^3 \leq 0.2100
 $$
 
@@ -208,15 +210,18 @@ O ${}h{}$ consiste, justamente no espaçamento entre os pontos e pode ser rescri
 
 $$
 \iff h^3 \leq 0.2100 \\
+\\
 \iff \frac{b-a}{N} \leq 0.2100 \iff \frac{0-1}{N} \leq 0.2100 \\
+\\
 \iff N \geq \frac{1}{0.21} \\
+\\
 \iff N \geq 4.7616
 $$
 E, portanto, ${}N = 5{}$. 
 Logo, são preciso ${} n  = N + 1 = 6{}$ pontos. 
 
 -> Para além do exercício...
-Podemos definir os pontos, bastava saber que o ${} h = \frac{1-0}{5} = 0.2{}$ 
+Podemos definir os pontos, bastava saber que o ${} h = \frac{b-a}{N} = \frac{1-0}{5} = 0.2{}$ 
 
 temos os potos ${}(x_{1}= 0, x_{2}=0.2, x_{3}=0.4, x_{5}=0.8, x_{6}= 1){}$. 
 
@@ -225,7 +230,12 @@ Determine, por interpolação quadrática, uma aproximação para $\cos(0.23)$ c
 
 Como já calculamos na alinha a), temos o $h = 0.2$ 
 
+Temos os pontos ${}(x_{1}= 0, x_{2}=0.2, x_{3}=0.4, x_{5}=0.8, x_{6}= 1){}$.
 
+Temos duas escolhas de pontos possíveis para a interpolação: 
+* ${}x_{1}, x_{2}, x_{3}{}$
+
+* ${}x_{2}, x_{3}, x_{4}{}$
 
 Calculando o ${}P_{2}(0.23){}$ no mathlab:
 
@@ -242,7 +252,52 @@ p3 = (((0.23-0)/(0.4-0)) * ((0.23-0.2)/(0.4-0.2))) * cos(0.4)
 
 P2 = p1+p2+p3
 
-  
+```
+Obtemos ${}P_{2}(0.23) = 0.4020 \times 10^{-4}{}$. 
+
+Calculando o erro, temos:
+```mathlab   
 
 error = abs(cos(0.23) - P2)
 ``` 
+O resultado satisfaz a condição ${} |E_{x}| \leq 0.5 \times 10^{-3}{}$. 
+
+## c) 
+Quantas entradas deveria ter a tabela se pretendêssemos usar interpolação cúbica?
+
+Para 3 casas decimais, temos novamente que
+$$
+| E_{x} | \leq 0.5 \times 10^{-3}
+$$
+
+Aplicando a fórmula do erro para [[#Pontos igualmentes espaçados (h) com x ${} in [a,b]{}$]], obtemos 
+$$
+\frac{h^4}{24} M_{4} \leq 0.5 \times 10^{-3} \\
+\iff h^4 \leq 24 \times 0.5 \times 10^{-3} \\
+\iff h \leq 0.3310 \\
+\iff \frac{b-a}{N} \leq 0.3310 \\
+\iff N = \frac{1-0}{0.3310} = 3.021 \implies N = 4
+$$
+
+Se temos 4 subintervalos, temos $N + 1$ pontos, ou seja temos 5 pontos.  
+
+Lembrando que  ${}M_{4}{}$
+
+$$
+M_4 = \max_{\xi \in [0, 0.4]} \vert{y''''(\xi)}\vert = \max_{\xi \in [0, 0.4]} \vert{}\cos(\xi)\vert{} = \cos(0) = 1 
+$$
+
+# Forma de Newton 
+
+$$
+P_{n-1}(x)= y_{1} + [y_{1}, y_{2}](x - x_{1}) + [y_{1}, y_{2}, y_{3}](x -x_{1})(x-x_{2})+ \dots+ [f_{1}, f_{2}, \dots, f_{n}](x -x_{1})(x-x_{2})\dots(x-x_{n-1})
+$$
+
+ou 
+$$
+P_{n-1}(x) = \sum^{n}_{k=1} [f_{1}, \dots, f_{k}](x-x_{1})\dots(x-x_{k-1})
+$$
+
+# Funções 
+## tabDifDiv 
+
