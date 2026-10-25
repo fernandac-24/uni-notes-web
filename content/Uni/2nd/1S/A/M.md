@@ -2,7 +2,10 @@
 title: Álgebra
 ---
 
-# Fichas 
+# Apontamentos 
+> [!tldr]- Clique aqui para ver **meus apontamentos**
+> ![[Resumo_algebra1.pdf]]
+# Ficha 
 > [!tldr]- Click here to view PDF
 > ![[Exercícios_Álgebra.pdf]]
 

@@ -34,8 +34,11 @@ Encontrei esse site, que para além de blog e um guia para estudo de Lógica, co
 
 # Lógica Proposicional
 
-> [!tldr]- Ainda não temos os slides 
+> [!tldr]- Click here to view **slides**
+> ![[slides_LogicaCC_Calculo_Proposicional(1).pdf]]
 
+> [!tldr]- Clique aqui para ver meu resumo de **Cálculo Proposicional**
+> ![[Resumo_CalculoProposicional.pdf]]
 
 # Ficha 
 
