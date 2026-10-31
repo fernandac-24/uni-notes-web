@@ -15,12 +15,12 @@ Pode-se dividir em 3 grupos os dispositivos que existem disponíveis no core, qu
 
 #### b)
 **Quais as diferenças básicas entre um hub e um switch?**
-[[resumo1#Equipamentos de Interligação |Mais info aqui!]]
+[[Uni/2nd/1S/SCR/resumos/resumo1#Equipamentos de Interligação|Mais info aqui!]]
 No lugar de enviar dados a todos os dispositivos em broadcasting com faz o Hub, o Switch lẽ endereços MAC e envia o pacote apenas para a porta de destino correta. 
 
 #### c)
 **Quais as diferenças entre um switch e um router?**
-[[resumo1#Equipamentos de Interligação |Mais info aqui!]]
+[[Uni/2nd/1S/SCR/resumos/resumo1#Equipamentos de Interligação|Mais info aqui!]]
 O Router é considerado um equipamento da camada 3, encaminhando dados com base em IPs entre diferentes redes. Enquanto o switch é um equipamento da camada 2, qu elida com endereços MAC e trabalha dentro de uma rede local. 
 
 #### d)

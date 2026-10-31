@@ -19,15 +19,18 @@ Encontrei esse site, que para além de blog e um guia para estudo de Lógica, co
 ## Apontamentos do Luis Pinto de 2014-2015
 
 > [!tldr]- Click here to view PDF
+> [[apontamentos.pdf]]
 > ![[apontamentos.pdf]]
 
 
 # Preliminares 
 
 > [!tldr]- Click here to view **slides**
+> [[Slides_LogicaCC_Preliminares.pdf]]
 > ![[Slides_LogicaCC_Preliminares.pdf]]
 
 > [!tldr]- Clique aqui para ver meu reusmo de **Preliminares** 
+> [[Resumo_Preliminares.pdf]]
 > ![[Resumo_Preliminares.pdf]]
 
 > [!note] Pode gerar alguma dúvida no apontamento quanto a prova de que $((\neg(\neg\bot)))$ $\notin \text{PROP}$, pois essa prova foi retirada do livro [[#Logic and Structure, D. van Dalen, Springer, 2013 (5ª edição)| Logic and Structure]] que usa a sintaxe estrita com parênteses obrigatórios em todas as negações $(\neg\phi)$ e conectivos, porém nas aulas usa-se a convenção de omitir parênteses externos e das negações.
@@ -35,14 +38,17 @@ Encontrei esse site, que para além de blog e um guia para estudo de Lógica, co
 # Lógica Proposicional
 
 > [!tldr]- Click here to view **slides**
-> ![[slides_LogicaCC_Calculo_Proposicional(1).pdf]]
+> [[slides_LogicaCC_Calculo_Proposicional.pdf]]
+> ![[slides_LogicaCC_Calculo_Proposicional.pdf]]
 
 > [!tldr]- Clique aqui para ver meu resumo de **Cálculo Proposicional**
+> [[Resumo_CalculoProposicional.pdf]]
 > ![[Resumo_CalculoProposicional.pdf]]
 
 # Ficha 
 
 > [!tldr]- Click here to view **ficha**
+> [[Exercicios_LogicaCC.pdf]]
 > ![[Exercicios_LogicaCC.pdf]]
 
 

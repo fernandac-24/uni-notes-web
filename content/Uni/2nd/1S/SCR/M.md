@@ -11,6 +11,6 @@ Aqui pode encontrar [[Uni/2nd/1S/SRC/FANET/home| minhas pesquisas]] para a organ
 
 ## 1) Redes Locais de Computadores
 
-[[resumo1 | Resumo da matéria]]
+[[Uni/2nd/1S/SCR/resumos/resumo1| Resumo da matéria]]
 
 
