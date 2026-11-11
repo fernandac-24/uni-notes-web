@@ -49,7 +49,7 @@ Considerando os três fatores referidos:
 
 	Como podemos ver a variação que pode existir deve-se ao ciclo existente cujo número de iterações depende do valor dos argumentos. 
 
-> [!note] Melhor Caso 
+> [!note] **Melhor Caso** 
 > Caso em que o valor a procurar se encontra na primeira posição do array
 > $$
 > \begin{align*}
@@ -73,3 +73,5 @@ Considerando os três fatores referidos:
 > Definidos ${}K_{1}{}$ e ${}K_{2}{}$ como novas constantes evidencia que a função de custo é um polinómio (de grau 1) sobre N. 
 > Este exemplo evidencia que poderíamos ter chegado a esta mesma conclusão se tivéssemos considerado apenas o custo associado a, por exemplo, aceder a uma posição do array. 
 
+> [!note] **Caso Médio**
+> 
