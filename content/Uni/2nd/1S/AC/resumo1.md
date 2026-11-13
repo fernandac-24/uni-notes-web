@@ -49,7 +49,7 @@ Considerando os três fatores referidos:
 
 	Como podemos ver a variação que pode existir deve-se ao ciclo existente cujo número de iterações depende do valor dos argumentos. 
 
-> [!note] **Melhor Caso** 
+> [!note]- **Melhor Caso** 
 > Caso em que o valor a procurar se encontra na primeira posição do array
 > $$
 > \begin{align*}
@@ -59,7 +59,7 @@ Considerando os três fatores referidos:
 > $$ 
 > Vemos que neste caso o custo é constante (não depende do número de elementos no aarray). 
 
-> [!note] **Pior Caso**
+> [!note]- **Pior Caso**
 > Caso em que a condição do ciclo (`v[i] != x`) é sempre verdadeira, logo o elemento a procurar não existe no array. 
 > $$
 > \begin{align*}
@@ -74,4 +74,54 @@ Considerando os três fatores referidos:
 > Este exemplo evidencia que poderíamos ter chegado a esta mesma conclusão se tivéssemos considerado apenas o custo associado a, por exemplo, aceder a uma posição do array. 
 
 > [!note] **Caso Médio**
-> 
+> Para calcular o valor esperado do custo de execução desta função temos que identificar todas as **possíveis execuções** ${}r{}$, para cada uma dessas determinar o **custo** ${}c_{r}{}$ e a **probabilidade** ${}p_{r}{}$. 
+> $$
+> \overline{T}(N) = \sum_{r} p_{r}*c_{r}
+> $$
+> Em particular, costuma-se dividir as execuções em dois casos possíveis:
+> *  casos em que a função retorna um índice do array (sucesso),
+> * casos de insucesso
+> com o objetivo de estabelecer as probabilidades envolvidas. O custo será dado por;
+> $$
+> \overline{T}_(N) = p_{suc} * \overline{T}_{suc}(N)+ p_{ins} * \overline{T}_{ins}(N)
+> $$
+> Daí temos: 
+> $$
+> \overline{T}_{ins}(N) = \sum_{i=0}^{N-1} 1 = N
+> $$
+> e 
+> $$
+> \begin{align*}
+> \overline{T}_{suc}(N) &= \sum_{i = 0}^{N-1} \overbrace{\frac{1}{N}}^{\text{prob (x==v[i])}} * \overbrace{(i + 1)}^{\text{custo}} \\
+> \\
+> &= \frac{1}{N} * \sum{i=0}^{N-1} (i+1) \\
+> \\
+> &= \frac{1}{N}* \sum{i=0}^{N} i \\
+> \\
+> &= \frac{1}{N} * \frac{N* (N+1)}{2} \\
+> \\
+> &= \frac{N+1}{2}
+> \end{align*}
+> $$
+> Nos resta apenas determinar a probabilidade de sucesso e de insucesso. 
+> ${}p_{suc} \approx 0{}$ e ${}p_{ins} \approx 1{}$
+> ```mermaid
+> flowchart TD
+>    A["Inteiro representado com b bits"] --> B["Total de valores possíveis: 2^b<br/>(Ex: para 32 bits, 2^32 combinações)"]
+>  B --> C{"Comparação aleatória:<br/>x == v[i] ?"}
+>    
+ >   C -->|"1 caso favorável<br/>(valores idênticos)"| D["Probabilidade de Igualdade:<br/>P(x == v[i]) = 1 / 2^b<br/>(Valor quase nulo)"]
+>    C -->|"2^b - 1 casos possíveis<br/>(valores diferentes)"| E["Probabilidade de Diferença:<br/>P(x != v[i]) = 1 - 1 / 2^b<br/>(Valor muito próximo de 1)"]
+>
+>    style D fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#155724
+>    style E fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#721c24
+> ```
+> Podemos, por fim caçcular o custo do caso médio
+> $$
+> \begin{align*}
+> \overline{T}(N) &= p_{suc} * \overline{T}_{suc}(N)+ p_{ins} * \overline{T}_{ins}(N) \\
+> \\
+> &\approx 0* \frac{N+1}{2} + 1 * N \\
+> &\approx N
+> \end{align*}
+> $$

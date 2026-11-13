@@ -42,10 +42,12 @@ title: Versão do Claude
 ## 2. Grupos de referência
 
 - **[Essencial]** $\mathbb Z_n=\{[0],\dots,[n-1]\}$, $[a]+[b]=[a+b]$: abeliano, ordem $n$, $=\langle[1]\rangle$. $[m]$ gera $\iff \operatorname{mdc}(m,n)=1$.
+> $a \equiv b \pmod n  \iff n \lvert (a-b) \iff$ a e b tem o mesmo resto na divisão inteira por $n$. 
 - **[Essencial]** $S_n$: $|S_n|=n!$; não abeliano se $n\ge 3$. $A_n$ (permutações pares) $\le S_n$, $|A_n|=n!/2$.
 - **[Útil]** $D_n\le S_n$ (simetrias do $n$-ágono), $|D_n|=2n$, $D_3=S_3$.
 - **[Útil]** $S_3=\{\mathrm{id},(123),(132),(12),(13),(23)\}$. Subgrupos próprios não triviais: $\langle(123)\rangle$ e os três $\{\mathrm{id},(ij)\}$. Não é cíclico.
 - **[Essencial] Produto direto** $G_1\times G_2$: $(g_1,g_2)(h_1,h_2)=(g_1h_1,g_2h_2)$; identidade $(1,1)$; inverso componente a componente; $|G_1\times G_2|=|G_1||G_2|$; abeliano $\iff$ ambos abelianos.
+> $\mathbb nZ = {nk \lvert k\in Z}$
   - $o(g,h)=\operatorname{mmc}(o(g),o(h))$ (porque $(g,h)^k=(g^k,h^k)$).
   - $\mathbb Z_m\times\mathbb Z_n$ cíclico $\iff \operatorname{mdc}(m,n)=1 \iff \mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$.
   - Cuidado: $\mathbb Z_2$ é cíclico mas $\mathbb Z_2\times\mathbb Z_2$ não é (contraexemplo para V/F).

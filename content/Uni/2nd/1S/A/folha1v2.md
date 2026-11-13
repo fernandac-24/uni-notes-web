@@ -665,7 +665,7 @@ Para calcular potências, avançar $$m$$ posições em cada ciclo para calcular 
 |A imagem de um homomorfismo é subgrupo.|Verdadeiro|
 |Um homomorfismo é injetivo se o núcleo for trivial.|Verdadeiro|
 |A ordem de um elemento divide a ordem do grupo finito.|Verdadeiro|
-|Se $$d\mid|G|$$, existe sempre um subgrupo de ordem $$d$$.|Falso|
+|Se $d\mid \lvert G \rvert$ , existe sempre um subgrupo de ordem $d$.|Falso|
 |Todo o grupo de ordem prima é cíclico.|Verdadeiro|
 |Todo o grupo de ordem 4 é cíclico.|Falso|
 |Todo o grupo de ordem 6 é abeliano.|Falso|
