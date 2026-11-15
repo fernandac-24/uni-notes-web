@@ -76,9 +76,9 @@ Organized by years:
 
 ## 2º Semester
 <details style="border: 1px solid var(--border, #888); border-radius: 6px; padding: 0.75rem 1rem; margin-bottom: 0.75rem;">
-  <summary style="font-weight: bold; cursor: pointer;">🔢 Análise Numérica</summary>
+  <summary style="font-weight: bold; cursor: pointer;">🔢 Análise Matemática</summary>
   <ul>
-    <li><a href="Uni/1st/2S/AN/M">Teory & Practical</a></li>
+    <li><a href="Uni/1st/2S/AM/M">Teory & Practical</a></li>
   </ul>
 </details>
 

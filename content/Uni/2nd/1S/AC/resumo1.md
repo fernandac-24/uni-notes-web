@@ -73,7 +73,7 @@ Considerando os três fatores referidos:
 > Definidos ${}K_{1}{}$ e ${}K_{2}{}$ como novas constantes evidencia que a função de custo é um polinómio (de grau 1) sobre N. 
 > Este exemplo evidencia que poderíamos ter chegado a esta mesma conclusão se tivéssemos considerado apenas o custo associado a, por exemplo, aceder a uma posição do array. 
 
-> [!note] **Caso Médio**
+> [!note]- **Caso Médio**
 > Para calcular o valor esperado do custo de execução desta função temos que identificar todas as **possíveis execuções** ${}r{}$, para cada uma dessas determinar o **custo** ${}c_{r}{}$ e a **probabilidade** ${}p_{r}{}$. 
 > $$
 > \overline{T}(N) = \sum_{r} p_{r}*c_{r}
@@ -116,7 +116,7 @@ Considerando os três fatores referidos:
 >    style D fill:#d4edda,stroke:#28a745,stroke-width:2px,color:#155724
 >    style E fill:#f8d7da,stroke:#dc3545,stroke-width:2px,color:#721c24
 > ```
-> Podemos, por fim caçcular o custo do caso médio
+> Podemos, por fim calcular o custo do caso médio
 > $$
 > \begin{align*}
 > \overline{T}(N) &= p_{suc} * \overline{T}_{suc}(N)+ p_{ins} * \overline{T}_{ins}(N) \\

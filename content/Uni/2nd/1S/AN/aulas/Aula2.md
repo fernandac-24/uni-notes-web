@@ -29,7 +29,7 @@ $324.2 \times 10^3 = 0.3242 \times 10^6$
 Considere o sistema $F$ = F (10, 4, −5, 5). Quais dos seguintes números são números de máaquina? E quais são representáveis?
 
 > [!info]- **Números de Máquina**
-> Dado um ${F} = (b,t,m,M)$, podem ser comsiderados números de máquinas, todos os $\varphi \in \R$  contanto que $\varphi$ possa ser escrito na forma normalizada em $t$ dígitos de mantissa e o expoente $e \in [m,M]$. 
+> Dado um ${F} = (b,t,m,M)$, podem ser considerados números de máquinas, todos os $\varphi \in \R$  contanto que $\varphi$ possa ser escrito na forma normalizada em $t$ dígitos de mantissa e o expoente $e \in [m,M]$. 
 
 > [!info]- **Números Representáveis**
 > São os números que pertencem ao conjunto dos números representáveis $R_\mathcal{F}$,  com 
@@ -40,11 +40,11 @@ Considere o sistema $F$ = F (10, 4, −5, 5). Quais dos seguintes números são 
 > $$
 > \Omega := (1-b^{-t})b^M
 > $$ 
-> é chamado de ==nível de overflow==, e 
+> é chamado de **nível de overflow**, e 
 > $$
 > \omega := b^{m-1}
 > $$
-> é chamado de ==nível de underflow==.
+> é chamado de **nível de underflow**.
 
 | Número | De máquina|Representável  | Obs |
 | -------- | ---------- | ----------| ---| 
@@ -52,7 +52,6 @@ Considere o sistema $F$ = F (10, 4, −5, 5). Quais dos seguintes números são 
 | $0.003234 \times 10^{-4}$ | F | F | Na forma normalizada fica: $0.3234 \times 10^{-6}$, como  $(-6) < (-5)$ , não pode ser número de máquina. E ele é menor que $\omega$, logo, não é representável. |
 | $432.41 \times 10^2$ | F | V | Na forma normalizada, temos. $0.43241 \times 10^5$ e portanto, há mais que 4 dígitos de mantissa. | 
 | $0.000123 \times 10^{-1}$ | V | V | Na forma normalizada: $0.123 \times 10^{-4}$ | 
-
 
 # Exercício 2
 Considere uma máquina com sistema de numeração $F = F (10, 4, −99, 99)$, com arredondamento usual
