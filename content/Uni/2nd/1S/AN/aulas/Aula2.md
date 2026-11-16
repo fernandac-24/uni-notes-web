@@ -296,9 +296,23 @@ A propriedade associativa da adição de floating points não é válida.
 
 
 # Exercício 6
+
+> [!info] Erro Absoluto 
+> $$
+> \lvert E_{\tilde{x}} \rvert = \lvert x - \tilde{x} \rvert
+> $$
+
+> [!info] Número de **casas decimais** corretas ($p$)
+> É o maior inteiro $p \ge 0$ tal que:
+> $$\vert{}x - \tilde{x}\vert{} \le 0.5 \times 10^{-p}$$ 
+
+> [!info] Número de **algarismos significativos** corretos ($q$)
+> Escrevendo $x$ em notação normalizada $\pm 0.d_1d_2\dots \times 10^e$ (com $d_1 \neq 0$), $q$ é o maior inteiro positivo tal que:
+> $$\vert{}x - \tilde{x}\vert{} \le 0.5 \times 10^{e - q}$$
+
 |  $\displaystyle x$  |  $\displaystyle \tilde{x}$  |  $\displaystyle E_{\tilde{x} }$  |$\displaystyle p$  |  $\displaystyle q$   |
 | -- | -- | -- | -- | -- |
-| $\displaystyle e^5 \approx 0.6737947$ | $\displaystyle 0.6738\times 10^2$  |$\displaystyle \lvert e⁵-0.6738\times10²\rvert \approx-5.3001\times10^{-6}<0.\times10^{-6}$ | 6 | 4  |
+| $\displaystyle e^5 \approx 0.6737947$ | $\displaystyle 0.6738\times 10^{-2}$  |$\displaystyle \lvert e⁵-0.6738\times10^{-2}\rvert \approx-5.3001\times10^{-6}<0.5\times10^{-6}$ | 6 | 4  |
 | $\displaystyle (4.231)^4 \approx 0.3204587 \times 10^3$ | $\displaystyle 0.3205\times 10^3$  | $\displaystyle \lvert(4.231)⁴ - 0.3205 \times 10³ \rvert \approx 0.0413 < 0.5 \times 10^{-1}$ | 1 | 4 |
 | $\displaystyle \sin (1.1)$  | $\displaystyle 0.891209$  | $\displaystyle \lvert sin(1.1) - 0.891209 \rvert \approx 1.6399 \times 10^{-6} < 0.5 \times 10^{-5}$ | 5 | 5 |
 
@@ -358,7 +372,7 @@ ans =
 	0.031415926535898
 ``` 
 
-Aproximando o valor, temos que identificar os primeiros 5 dígitos significativos e aplicar a regra de arredondamento no 6.º dígito.
+Aproximando o valor, temos que identificar os primeiros 5 **dígitos significativos** e aplicar a regra de arredondamento no 6.º dígito.
 $$
 \begin{align*}
 \frac{\pi}{100} \approx 0.03141
@@ -380,7 +394,7 @@ ans =
 Aproximando o valor, temos que identificar os primeiros 5 dígitos significativos e aplicar a regra de arredondamento no 6.º dígito.
 $$
 \begin{align*}
-e^3 \approx 0.03141
+e^3 \approx \mathbf{20.086} \quad (\text{ou } 0.20086 \times 10^2)
 \end{align*}
 $$
 ------------------------------------------------------------------------
