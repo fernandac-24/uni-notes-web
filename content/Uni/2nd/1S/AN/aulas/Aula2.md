@@ -267,6 +267,7 @@ iv = logical
 Considere o sistema $\mathcal{F} (10, 4, −99, 99)$, com arredondamento usual.
 
 ## a)
+> [!warning] Está ressolução está mal/incompleta
 Dados x = 0.8348, y = 0.4316 × 10−4 e z = 0.4721 × 10−4, calcule $(x \bigoplus y) \bigoplus z$ e $x \bigoplus (y \bigoplus z)$ e comente os resultados.
 
 $$
@@ -285,6 +286,8 @@ x \bigoplus y = fl(x + y) \\
 &= 0.8348
 \end{align*}
 $$
+
+A propriedade associativa da adição de floating points não é válida. 
 
 > [!info] Arrendondamento 
 > 
