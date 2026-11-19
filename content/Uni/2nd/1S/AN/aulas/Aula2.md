@@ -302,13 +302,14 @@ A propriedade associativa da adição de floating points não é válida.
 > \lvert E_{\tilde{x}} \rvert = \lvert x - \tilde{x} \rvert
 > $$
 
-> [!info] Número de **casas decimais** corretas ($p$)
+> [!info] Número de **casas decimais(c.d.)** corretas ($p$)
 > É o maior inteiro $p \ge 0$ tal que:
 > $$\vert{}x - \tilde{x}\vert{} \le 0.5 \times 10^{-p}$$ 
 
-> [!info] Número de **algarismos significativos** corretos ($q$)
+> [!info] Número de **algarismos significativos(a.s.)** corretos ($q$)
 > Escrevendo $x$ em notação normalizada $\pm 0.d_1d_2\dots \times 10^e$ (com $d_1 \neq 0$), $q$ é o maior inteiro positivo tal que:
 > $$\vert{}x - \tilde{x}\vert{} \le 0.5 \times 10^{e - q}$$
+> 
 
 |  $\displaystyle x$  |  $\displaystyle \tilde{x}$  |  $\displaystyle E_{\tilde{x} }$  |$\displaystyle p$  |  $\displaystyle q$   |
 | -- | -- | -- | -- | -- |
@@ -499,16 +500,16 @@ Calcule o número de condição das funções $f(x) = \sqrt{x}$ e $g(x) = x^n$, 
 
 
 $$
-f'(x) = \frac{-1}{2 \sqrt{ x }}
+f'(x) = \frac{1}{2 \sqrt{ x }}
 $$
 
 Logo, temos que o número de condição de $f(x)$ é
 $$
 \begin{align*}
-cond f(x) &= \left\lvert \frac{x \left( \frac{-1}{2 \sqrt{ x }} \right)}{\sqrt{ x }} \right\rvert 
-&= \left\lvert \frac{\frac{-x}{2\sqrt{ x }}}{\sqrt{ x }} \right\rvert \\
-&= \left\lvert \frac{-x}{2x} \right\rvert 
-&= \left\lvert \frac{-1}{2} \right\rvert \\
+cond f(x) &= \left\lvert \frac{x \left( \frac{1}{2 \sqrt{ x }} \right)}{\sqrt{ x }} \right\rvert 
+&= \left\lvert \frac{\frac{x}{2\sqrt{ x }}}{\sqrt{ x }} \right\rvert \\
+&= \left\lvert \frac{x}{2x} \right\rvert 
+&= \left\lvert \frac{1}{2} \right\rvert \\
 &= \frac{1}{2}
  \end{align*} 
 $$
@@ -541,9 +542,7 @@ f'(x) = \frac{1}{x}
 $$
 
 $$
-\begin{aling*}
 cond f(x) = \frac{|x|\cancel{ e^x }}{\cancel{ e^x }} = |x|
-\end{aling*}
 $$
 O condicionamento da função depende do x,  ${}g{}$ é:
 * bem condicionada quando x é pequeno.
@@ -562,10 +561,10 @@ $$
 
 Logo, 
 $$ 
-\begin{cases}
+\begin{align*}
 \text{Se } x \approx 1, & \text{mal condicionado (pois } \ln(1) = 0 \text{)} \\
 \text{Caso contrário}, & \text{bem condicionado}
-\end{cases} 
+\end{align*} 
 $$
 
 
